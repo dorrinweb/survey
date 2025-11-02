@@ -1,0 +1,1214 @@
+[33mb8ce8b9[m[33m ([m[1;36mHEAD -> [m[1;32mMVP3-R0[m[33m)[m HEAD@{0}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33m05b38cc[m[33m ([m[1;31morigin/MVP3-R0[m[33m)[m HEAD@{1}: checkout: moving from develop to MVP3-R0
+[33m45bd39d[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{2}: pull: Fast-forward
+[33m8a8f106[m HEAD@{3}: checkout: moving from goToBot-type-steps to develop
+[33m5b56514[m[33m ([m[1;32mgoToBot-type-steps[m[33m)[m HEAD@{4}: commit: go to bots steps implementation1
+[33m8a8f106[m HEAD@{5}: checkout: moving from develop to goToBot-type-steps
+[33m8a8f106[m HEAD@{6}: merge origin/roya: Merge made by the 'ort' strategy.
+[33mf1d1fc1[m HEAD@{7}: checkout: moving from MVP3-R0 to develop
+[33m05b38cc[m[33m ([m[1;31morigin/MVP3-R0[m[33m)[m HEAD@{8}: cherry-pick: botIds bug fixed on searchMyDoBot API
+[33me6c4f1c[m HEAD@{9}: cherry-pick: ERP doBot methode
+[33mfe27882[m HEAD@{10}: pull --tags origin MVP3-R0: Fast-forward
+[33md22c6e2[m HEAD@{11}: checkout: moving from develop to MVP3-R0
+[33mf1d1fc1[m HEAD@{12}: merge origin/roya: Merge made by the 'ort' strategy.
+[33md0979a5[m HEAD@{13}: checkout: moving from develop to develop
+[33md0979a5[m HEAD@{14}: pull: Fast-forward
+[33m9b52860[m HEAD@{15}: pull: Fast-forward
+[33m35688d7[m HEAD@{16}: pull: Fast-forward
+[33m665ae7d[m HEAD@{17}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m62d3adb[m HEAD@{18}: checkout: moving from MVP3-R0 to develop
+[33md22c6e2[m HEAD@{19}: commit: checking user access run bot improved
+[33m3459ffe[m HEAD@{20}: checkout: moving from develop to MVP3-R0
+[33m62d3adb[m HEAD@{21}: pull: Fast-forward
+[33m21a781d[m HEAD@{22}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m067cb3b[m HEAD@{23}: merge origin/roya: Merge made by the 'ort' strategy.
+[33mefc0131[m HEAD@{24}: merge origin/roya: Merge made by the 'ort' strategy.
+[33ma1efd5b[m HEAD@{25}: merge checking-bot-access: Merge made by the 'ort' strategy.
+[33m4ea19d7[m HEAD@{26}: checkout: moving from develop to develop
+[33m4ea19d7[m HEAD@{27}: checkout: moving from checking-bot-access to develop
+[33mc0ebf6b[m[33m ([m[1;32mchecking-bot-access[m[33m)[m HEAD@{28}: commit: botId , productId, testMode was added to socket connection
+[33m775808b[m HEAD@{29}: checkout: moving from develop to checking-bot-access
+[33m4ea19d7[m HEAD@{30}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m49f70f2[m HEAD@{31}: checkout: moving from MVP3-R0 to develop
+[33m3459ffe[m HEAD@{32}: checkout: moving from MVP3-R0 to MVP3-R0
+[33m3459ffe[m HEAD@{33}: checkout: moving from MVP3-R0 to MVP3-R0
+[33m3459ffe[m HEAD@{34}: commit: userCompletedBotsInProduct bug fixed
+[33m97a4d98[m HEAD@{35}: checkout: moving from develop to MVP3-R0
+[33m49f70f2[m HEAD@{36}: reset: moving to HEAD~
+[33ma7515b8[m HEAD@{37}: commit: userCompletedBotsInProduct bug fixed
+[33m49f70f2[m HEAD@{38}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33md3bbab3[m HEAD@{39}: checkout: moving from MVP3-R0 to develop
+[33m97a4d98[m HEAD@{40}: commit: @firstname@ bug fixed
+[33m36cddc0[m HEAD@{41}: checkout: moving from main to MVP3-R0
+[33m816bd8a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{42}: checkout: moving from develop to main
+[33md3bbab3[m HEAD@{43}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33ma447fbc[m HEAD@{44}: checkout: moving from MVP3-R0 to develop
+[33m36cddc0[m HEAD@{45}: commit: nationalId bug fixed
+[33m7a88cc3[m HEAD@{46}: checkout: moving from develop to MVP3-R0
+[33ma447fbc[m HEAD@{47}: checkout: moving from main to develop
+[33m816bd8a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{48}: checkout: moving from develop to main
+[33ma447fbc[m HEAD@{49}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m0edbd82[m HEAD@{50}: checkout: moving from MVP3-R0 to develop
+[33m7a88cc3[m HEAD@{51}: commit: calledStep code was added to calledStep types of steps
+[33mf713d41[m HEAD@{52}: checkout: moving from develop to MVP3-R0
+[33m0edbd82[m HEAD@{53}: checkout: moving from main to develop
+[33m816bd8a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{54}: cherry-pick: seeding category
+[33ma90df8e[m HEAD@{55}: checkout: moving from develop to main
+[33m0edbd82[m HEAD@{56}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33md536ad6[m HEAD@{57}: checkout: moving from MVP3-R0 to develop
+[33mf713d41[m HEAD@{58}: pull: Fast-forward
+[33m1f3e35d[m HEAD@{59}: checkout: moving from develop to MVP3-R0
+[33md536ad6[m HEAD@{60}: merge origin/develop: Merge made by the 'ort' strategy.
+[33m2dbc761[m HEAD@{61}: merge roya: Merge made by the 'ort' strategy.
+[33macc86f7[m HEAD@{62}: checkout: moving from roya to develop
+[33mfdeff34[m[33m ([m[1;32mroya[m[33m)[m HEAD@{63}: checkout: moving from roya to roya
+[33mfdeff34[m[33m ([m[1;32mroya[m[33m)[m HEAD@{64}: pull --tags origin roya: Fast-forward
+[33m730b913[m HEAD@{65}: checkout: moving from develop to roya
+[33macc86f7[m HEAD@{66}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m2f98cc1[m HEAD@{67}: checkout: moving from MVP3-R0 to develop
+[33m1f3e35d[m HEAD@{68}: commit: is free condition was removed from get started step id
+[33m918b279[m HEAD@{69}: checkout: moving from develop to MVP3-R0
+[33m2f98cc1[m HEAD@{70}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33md5f5077[m HEAD@{71}: checkout: moving from MVP3-R0 to develop
+[33m918b279[m HEAD@{72}: commit: set parameter for redirect after logout
+[33m48aa94b[m HEAD@{73}: checkout: moving from main to MVP3-R0
+[33ma90df8e[m HEAD@{74}: checkout: moving from MVP3-R0 to main
+[33m48aa94b[m HEAD@{75}: checkout: moving from develop to MVP3-R0
+[33md5f5077[m HEAD@{76}: checkout: moving from main to develop
+[33ma90df8e[m HEAD@{77}: checkout: moving from develop to main
+[33md5f5077[m HEAD@{78}: checkout: moving from main to develop
+[33ma90df8e[m HEAD@{79}: commit: seeding
+[33m1c12253[m HEAD@{80}: commit: role name bug in add personality fixed
+[33me6b4423[m HEAD@{81}: checkout: moving from MVP3-R0 to main
+[33m48aa94b[m HEAD@{82}: reset: moving to HEAD
+[33m48aa94b[m HEAD@{83}: merge develop: Merge made by the 'ort' strategy.
+[33m26c8b20[m HEAD@{84}: checkout: moving from develop to MVP3-R0
+[33md5f5077[m HEAD@{85}: checkout: moving from transaction to develop
+[33md3b0172[m[33m ([m[1;32mtransaction[m[33m)[m HEAD@{86}: commit: removing deleted bot from products
+[33m28bdb61[m HEAD@{87}: checkout: moving from checking-bot-access to transaction
+[33m775808b[m HEAD@{88}: commit: checking bot user access
+[33md5f5077[m HEAD@{89}: checkout: moving from develop to checking-bot-access
+[33md5f5077[m HEAD@{90}: checkout: moving from bot_accessing to develop
+[33m7b0958d[m HEAD@{91}: checkout: moving from develop to bot_accessing
+[33md5f5077[m HEAD@{92}: commit: user descrip tion was added to his info
+[33m25c06ea[m HEAD@{93}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m9c44c00[m HEAD@{94}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m7d5e7a2[m HEAD@{95}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m1cb24a7[m HEAD@{96}: checkout: moving from bot_accessing to develop
+[33m7b0958d[m HEAD@{97}: checkout: moving from develop to bot_accessing
+[33m1cb24a7[m HEAD@{98}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m360cd5a[m HEAD@{99}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m3d4113a[m HEAD@{100}: pull --tags origin develop: Fast-forward
+[33m22b62cc[m HEAD@{101}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m7d24467[m HEAD@{102}: commit: edit hasProblem bug fixed
+[33m7bfa873[m HEAD@{103}: commit: edit after of step needs to trobleshooting
+[33m6cda8d0[m HEAD@{104}: pull: Fast-forward
+[33m9d5fb03[m HEAD@{105}: merge bot_accessing: Merge made by the 'ort' strategy.
+[33m1326358[m HEAD@{106}: checkout: moving from bot_accessing to develop
+[33m7b0958d[m HEAD@{107}: checkout: moving from transaction to bot_accessing
+[33m28bdb61[m HEAD@{108}: checkout: moving from bot_accessing to transaction
+[33m7b0958d[m HEAD@{109}: checkout: moving from transaction to bot_accessing
+[33m28bdb61[m HEAD@{110}: commit: testing transaction step1
+[33m7b0958d[m HEAD@{111}: checkout: moving from bot_accessing to transaction
+[33m7b0958d[m HEAD@{112}: checkout: moving from transaction to bot_accessing
+[33m7b0958d[m HEAD@{113}: checkout: moving from bot_accessing to transaction
+[33m7b0958d[m HEAD@{114}: commit: step3
+[33m37de350[m HEAD@{115}: checkout: moving from develop to bot_accessing
+[33m1326358[m HEAD@{116}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m55b8c1e[m HEAD@{117}: checkout: moving from bot_accessing to develop
+[33m37de350[m HEAD@{118}: reset: moving to HEAD
+[33m37de350[m HEAD@{119}: checkout: moving from develop to bot_accessing
+[33m55b8c1e[m HEAD@{120}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m40d93ee[m HEAD@{121}: checkout: moving from bot_accessing to develop
+[33m37de350[m HEAD@{122}: commit: grant bot step2
+[33m4107a91[m HEAD@{123}: checkout: moving from develop to bot_accessing
+[33m40d93ee[m HEAD@{124}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m669138b[m HEAD@{125}: merge origin/roya: Merge made by the 'ort' strategy.
+[33mc1d2bca[m HEAD@{126}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m3d22e5d[m HEAD@{127}: checkout: moving from bot_accessing to develop
+[33m4107a91[m HEAD@{128}: commit: grant bot access to bots
+[33m3d22e5d[m HEAD@{129}: checkout: moving from develop to bot_accessing
+[33m3d22e5d[m HEAD@{130}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m12454f0[m HEAD@{131}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m53c0f9b[m HEAD@{132}: checkout: moving from mvp2-R0 to develop
+[33m4a95390[m[33m ([m[1;31morigin/mvp2-R0[m[33m, [m[1;32mmvp2-R0[m[33m)[m HEAD@{133}: checkout: moving from develop to mvp2-R0
+[33m53c0f9b[m HEAD@{134}: checkout: moving from bot_accessing to develop
+[33m53c0f9b[m HEAD@{135}: checkout: moving from develop to bot_accessing
+[33m53c0f9b[m HEAD@{136}: checkout: moving from main to develop
+[33me6b4423[m HEAD@{137}: checkout: moving from mvp2-R0 to main
+[33m4a95390[m[33m ([m[1;31morigin/mvp2-R0[m[33m, [m[1;32mmvp2-R0[m[33m)[m HEAD@{138}: checkout: moving from develop to mvp2-R0
+[33m53c0f9b[m HEAD@{139}: checkout: moving from mvp2-R0 to develop
+[33m4a95390[m[33m ([m[1;31morigin/mvp2-R0[m[33m, [m[1;32mmvp2-R0[m[33m)[m HEAD@{140}: checkout: moving from main to mvp2-R0
+[33me6b4423[m HEAD@{141}: checkout: moving from develop to main
+[33m53c0f9b[m HEAD@{142}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m92f7bbf[m HEAD@{143}: checkout: moving from mvp2-R0 to develop
+[33m4a95390[m[33m ([m[1;31morigin/mvp2-R0[m[33m, [m[1;32mmvp2-R0[m[33m)[m HEAD@{144}: merge e6b4423c367c7be98f5c5afc79b08f9dbd3d67fa: Merge made by the 'ort' strategy.
+[33m8c11a42[m HEAD@{145}: checkout: moving from main to mvp2-R0
+[33me6b4423[m HEAD@{146}: commit: new Dockerfile & docker-compose were adde for pro
+[33m6cc1943[m HEAD@{147}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m9229ead[m HEAD@{148}: checkout: moving from mvp2-R0 to main
+[33m8c11a42[m HEAD@{149}: reset: moving to 8c11a42
+[33m8c11a42[m HEAD@{150}: checkout: moving from develop to mvp2-R0
+[33m92f7bbf[m HEAD@{151}: merge origin/roya: Merge made by the 'ort' strategy.
+[33me449491[m HEAD@{152}: pull: Fast-forward
+[33m1940271[m HEAD@{153}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m75d873c[m HEAD@{154}: commit: parent step code was added to index of steps
+[33m437d2e2[m HEAD@{155}: merge origin/roya: Merge made by the 'ort' strategy.
+[33me85daf0[m HEAD@{156}: commit (merge): Merge branch 'running_bots_status' into develop
+[33md77274b[m HEAD@{157}: checkout: moving from running_bots_status to develop
+[33m92e92fd[m[33m ([m[1;32mrunning_bots_status[m[33m)[m HEAD@{158}: commit: dons save productConrtoller changes
+[33m341aa3a[m HEAD@{159}: checkout: moving from develop to running_bots_status
+[33md77274b[m HEAD@{160}: checkout: moving from running_bots_status to develop
+[33m341aa3a[m HEAD@{161}: checkout: moving from develop to running_bots_status
+[33md77274b[m HEAD@{162}: reset: moving to d77274b
+[33md77274b[m HEAD@{163}: checkout: moving from running_bots_status to develop
+[33m341aa3a[m HEAD@{164}: checkout: moving from develop to running_bots_status
+[33md77274b[m HEAD@{165}: reset: moving to d77274b
+[33m236004a[m HEAD@{166}: reset: moving to 236004adf1cfb9f23fd9061031bdf3d175567d1c
+[33md77274b[m HEAD@{167}: checkout: moving from running_bots_status to develop
+[33m341aa3a[m HEAD@{168}: checkout: moving from develop to running_bots_status
+[33md77274b[m HEAD@{169}: merge 236004adf1cfb9f23fd9061031bdf3d175567d1c: Merge made by the 'ort' strategy.
+[33m54d66dd[m HEAD@{170}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m3fa157e[m HEAD@{171}: merge origin/roya: Merge made by the 'ort' strategy.
+[33mfd07637[m HEAD@{172}: checkout: moving from develop to develop
+[33mfd07637[m HEAD@{173}: checkout: moving from running_bots_status to develop
+[33m341aa3a[m HEAD@{174}: commit: add running status to each bots in product
+[33mfd07637[m HEAD@{175}: checkout: moving from develop to running_bots_status
+[33mfd07637[m HEAD@{176}: checkout: moving from mvp2-R0 to develop
+[33m8c11a42[m HEAD@{177}: checkout: moving from develop to mvp2-R0
+[33mfd07637[m HEAD@{178}: checkout: moving from mvp2-R0 to develop
+[33m8c11a42[m HEAD@{179}: checkout: moving from develop to mvp2-R0
+[33mfd07637[m HEAD@{180}: checkout: moving from develop to develop
+[33mfd07637[m HEAD@{181}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33mb1f589c[m HEAD@{182}: checkout: moving from MVP3-R0 to develop
+[33m26c8b20[m HEAD@{183}: merge 8c11a42f861862313521e87057609342a9733703: Merge made by the 'ort' strategy.
+[33m1b9744a[m HEAD@{184}: checkout: moving from mvp2-R0 to MVP3-R0
+[33m8c11a42[m HEAD@{185}: commit: ERR_HTTP_HEADERS_SENT bug fixed
+[33mbd4a950[m HEAD@{186}: checkout: moving from MVP3-R0 to mvp2-R0
+[33m1b9744a[m HEAD@{187}: checkout: moving from develop to MVP3-R0
+[33mb1f589c[m HEAD@{188}: commit: parent step code was added to view step data
+[33m74ef3e4[m HEAD@{189}: merge suspension: Merge made by the 'ort' strategy.
+[33m4040e37[m HEAD@{190}: checkout: moving from suspension to develop
+[33m01cf3c9[m[33m ([m[1;32msuspension[m[33m)[m HEAD@{191}: checkout: moving from develop to suspension
+[33m4040e37[m HEAD@{192}: checkout: moving from MVP3-R0 to develop
+[33m1b9744a[m HEAD@{193}: checkout: moving from suspension to MVP3-R0
+[33m01cf3c9[m[33m ([m[1;32msuspension[m[33m)[m HEAD@{194}: checkout: moving from develop to suspension
+[33m4040e37[m HEAD@{195}: checkout: moving from suspension to develop
+[33m01cf3c9[m[33m ([m[1;32msuspension[m[33m)[m HEAD@{196}: commit: suspension type handling was implemented
+[33m6dad012[m HEAD@{197}: checkout: moving from develop to suspension
+[33m4040e37[m HEAD@{198}: checkout: moving from suspension to develop
+[33m6dad012[m HEAD@{199}: reset: moving to HEAD
+[33m6dad012[m HEAD@{200}: checkout: moving from develop to suspension
+[33m4040e37[m HEAD@{201}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m1d0857e[m HEAD@{202}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m711c09a[m HEAD@{203}: checkout: moving from suspension to develop
+[33m6dad012[m HEAD@{204}: reset: moving to HEAD
+[33m6dad012[m HEAD@{205}: checkout: moving from develop to suspension
+[33m711c09a[m HEAD@{206}: checkout: moving from MVP3-R0 to develop
+[33m1b9744a[m HEAD@{207}: checkout: moving from develop to MVP3-R0
+[33m711c09a[m HEAD@{208}: checkout: moving from MVP3-R0 to develop
+[33m1b9744a[m HEAD@{209}: checkout: moving from develop to MVP3-R0
+[33m711c09a[m HEAD@{210}: checkout: moving from develop to develop
+[33m711c09a[m HEAD@{211}: checkout: moving from develop to develop
+[33m711c09a[m HEAD@{212}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m02404a6[m HEAD@{213}: checkout: moving from MVP3-R0 to develop
+[33m1b9744a[m HEAD@{214}: commit: save to inbox bug fixed
+[33m236c5b8[m HEAD@{215}: checkout: moving from develop to MVP3-R0
+[33m02404a6[m HEAD@{216}: merge origin/roya: Merge made by the 'ort' strategy.
+[33mcb45f32[m HEAD@{217}: checkout: moving from MVP3-R0 to develop
+[33m236c5b8[m HEAD@{218}: checkout: moving from MVP3-R0 to MVP3-R0
+[33m236c5b8[m HEAD@{219}: checkout: moving from develop to MVP3-R0
+[33mcb45f32[m HEAD@{220}: checkout: moving from MVP3-R0 to develop
+[33m236c5b8[m HEAD@{221}: checkout: moving from suspension to MVP3-R0
+[33m6dad012[m HEAD@{222}: reset: moving to HEAD
+[33m6dad012[m HEAD@{223}: checkout: moving from develop to suspension
+[33mcb45f32[m HEAD@{224}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m5e3c2be[m HEAD@{225}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33mf9e884c[m HEAD@{226}: checkout: moving from MVP3-R0 to develop
+[33m236c5b8[m HEAD@{227}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33m00fad7e[m HEAD@{228}: checkout: moving from develop to MVP3-R0
+[33mf9e884c[m HEAD@{229}: checkout: moving from suspension to develop
+[33m6dad012[m HEAD@{230}: commit: run bot by suspension type message step1
+[33m6ecf700[m HEAD@{231}: commit: add and edit suspension type message were implemented
+[33m5287af1[m HEAD@{232}: commit: Addin two steps by suspension type was prohibited
+[33m9d7c3ff[m HEAD@{233}: checkout: moving from develop to suspension
+[33mf9e884c[m HEAD@{234}: merge origin/roya: Merge made by the 'ort' strategy.
+[33ma74edfa[m HEAD@{235}: checkout: moving from suspension to develop
+[33m9d7c3ff[m HEAD@{236}: checkout: moving from develop to suspension
+[33ma74edfa[m HEAD@{237}: checkout: moving from suspension to develop
+[33m9d7c3ff[m HEAD@{238}: checkout: moving from develop to suspension
+[33ma74edfa[m HEAD@{239}: checkout: moving from suspension to develop
+[33m9d7c3ff[m HEAD@{240}: commit: add suspension type of step in teacher panel
+[33ma74edfa[m HEAD@{241}: checkout: moving from develop to suspension
+[33ma74edfa[m HEAD@{242}: checkout: moving from suspension to develop
+[33ma74edfa[m HEAD@{243}: checkout: moving from suspension to suspension
+[33ma74edfa[m HEAD@{244}: checkout: moving from develop to suspension
+[33ma74edfa[m HEAD@{245}: checkout: moving from develop to develop
+[33ma74edfa[m HEAD@{246}: checkout: moving from suspension to develop
+[33ma74edfa[m HEAD@{247}: checkout: moving from develop to suspension
+[33ma74edfa[m HEAD@{248}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m2ea9299[m HEAD@{249}: checkout: moving from MVP3-R0 to develop
+[33m00fad7e[m HEAD@{250}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33m5eacc00[m HEAD@{251}: checkout: moving from develop to MVP3-R0
+[33m2ea9299[m HEAD@{252}: reset: moving to HEAD
+[33m2ea9299[m HEAD@{253}: pull: Fast-forward
+[33m62f125e[m HEAD@{254}: commit: survey result link was added to bot
+[33m0475fb0[m HEAD@{255}: commit: filtering bot by superAdmin acitve & bot validate were added to index bot and my bot
+[33mb79b41e[m HEAD@{256}: commit: change activate bot by superAdmin was added
+[33m88a0061[m HEAD@{257}: commit: bug fixed in filter users by role name
+[33m546906a[m HEAD@{258}: commit: bug fixing in islast editing step
+[33mb516314[m HEAD@{259}: commit: checking hasProblem when active status is true in change active API
+[33mcf7e7df[m HEAD@{260}: reset: moving to cf7e7df1180093a1b0b319ede0f7f49810bd592e
+[33m185991e[m HEAD@{261}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33mcf7e7df[m HEAD@{262}: checkout: moving from develop to develop
+[33mcf7e7df[m HEAD@{263}: checkout: moving from MVP3-R0 to develop
+[33m5eacc00[m HEAD@{264}: checkout: moving from develop to MVP3-R0
+[33mcf7e7df[m HEAD@{265}: reset: moving to cf7e7df1180093a1b0b319ede0f7f49810bd592e
+[33m6da8816[m HEAD@{266}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33mcf7e7df[m HEAD@{267}: checkout: moving from MVP3-R0 to develop
+[33m5eacc00[m HEAD@{268}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33m510d2df[m HEAD@{269}: checkout: moving from develop to MVP3-R0
+[33mcf7e7df[m HEAD@{270}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m92c3387[m HEAD@{271}: checkout: moving from MVP3-R0 to develop
+[33m510d2df[m HEAD@{272}: commit: save userAnswer file bug fixing
+[33mf831ac2[m HEAD@{273}: checkout: moving from develop to MVP3-R0
+[33m92c3387[m HEAD@{274}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m150379a[m HEAD@{275}: checkout: moving from MVP3-R0 to develop
+[33mf831ac2[m HEAD@{276}: commit: id of field and grade was added to user profile info
+[33md320eae[m HEAD@{277}: checkout: moving from develop to MVP3-R0
+[33m150379a[m HEAD@{278}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m43e3773[m HEAD@{279}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m8e37f94[m HEAD@{280}: checkout: moving from MVP3-R0 to develop
+[33md320eae[m HEAD@{281}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33m7e194d0[m HEAD@{282}: checkout: moving from develop to MVP3-R0
+[33m8e37f94[m HEAD@{283}: merge origin/roya: Merge made by the 'ort' strategy.
+[33mea99c27[m HEAD@{284}: checkout: moving from develop to develop
+[33mea99c27[m HEAD@{285}: merge origin/develop: Merge made by the 'ort' strategy.
+[33me7403ab[m HEAD@{286}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m0efaf9f[m HEAD@{287}: checkout: moving from MVP3-R0 to develop
+[33m7e194d0[m HEAD@{288}: checkout: moving from MVP3-R0 to MVP3-R0
+[33m7e194d0[m HEAD@{289}: checkout: moving from MVP3-R0 to MVP3-R0
+[33m7e194d0[m HEAD@{290}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33mc61a2f6[m HEAD@{291}: checkout: moving from develop to MVP3-R0
+[33m0efaf9f[m HEAD@{292}: commit (merge): Merge branch 'MVP3-R0' into develop
+[33mbc2a6b1[m HEAD@{293}: checkout: moving from MVP3-R0 to develop
+[33mc61a2f6[m HEAD@{294}: commit: @firstname@ improved
+[33m66fd4cd[m HEAD@{295}: checkout: moving from develop to MVP3-R0
+[33mbc2a6b1[m HEAD@{296}: commit (merge): Merge branch 'MVP3-R0' into develop
+[33mc5f1075[m HEAD@{297}: checkout: moving from MVP3-R0 to develop
+[33m66fd4cd[m HEAD@{298}: commit: bug fixing in @firstname@
+[33md7d7f86[m HEAD@{299}: checkout: moving from develop to MVP3-R0
+[33mc5f1075[m HEAD@{300}: checkout: moving from go-to-step to develop
+[33m8e126a7[m[33m ([m[1;32mgo-to-step[m[33m)[m HEAD@{301}: checkout: moving from develop to go-to-step
+[33mc5f1075[m HEAD@{302}: commit (merge): Merge branch 'go-to-step' into develop
+[33m38a3359[m HEAD@{303}: checkout: moving from go-to-step to develop
+[33m8e126a7[m[33m ([m[1;32mgo-to-step[m[33m)[m HEAD@{304}: commit: check step has child and is called in other step in deleting was added
+[33m9bb4898[m HEAD@{305}: commit: Avoid referencing the step's own parent by Single,Multy,TexAI type
+[33mdfc47c3[m HEAD@{306}: checkout: moving from develop to go-to-step
+[33m38a3359[m HEAD@{307}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m0dd5b74[m HEAD@{308}: checkout: moving from MVP3-R0 to develop
+[33md7d7f86[m HEAD@{309}: commit: asigning defalt to bot avatar
+[33md9b4a23[m HEAD@{310}: checkout: moving from go-to-step to MVP3-R0
+[33mdfc47c3[m HEAD@{311}: checkout: moving from develop to go-to-step
+[33m0dd5b74[m HEAD@{312}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m9ece358[m HEAD@{313}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m63c08c0[m HEAD@{314}: checkout: moving from MVP3-R0 to develop
+[33md9b4a23[m HEAD@{315}: merge origin/roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33m2282e25[m HEAD@{316}: checkout: moving from go-to-step to MVP3-R0
+[33mdfc47c3[m HEAD@{317}: commit: edit steps was changed and completed for GoToStep types
+[33m9005bd1[m HEAD@{318}: checkout: moving from develop to go-to-step
+[33m63c08c0[m HEAD@{319}: merge origin/roya: Merge made by the 'ort' strategy.
+[33m65ecedc[m HEAD@{320}: checkout: moving from MVP3-R0 to develop
+[33m2282e25[m HEAD@{321}: checkout: moving from develop to MVP3-R0
+[33m65ecedc[m HEAD@{322}: checkout: moving from go-to-step to develop
+[33m9005bd1[m HEAD@{323}: reset: moving to HEAD
+[33m9005bd1[m HEAD@{324}: checkout: moving from go-to-step to go-to-step
+[33m9005bd1[m HEAD@{325}: checkout: moving from develop to go-to-step
+[33m65ecedc[m HEAD@{326}: checkout: moving from go-to-step to develop
+[33m9005bd1[m HEAD@{327}: commit: stash_1
+[33m7d1d3d3[m HEAD@{328}: commit: References to the GoToStep type step were avoided
+[33m9e6cd22[m HEAD@{329}: commit: reference to the parent of the step itself was prevented
+[33m1f5bb7e[m HEAD@{330}: commit: Adding repeated steps to the doBot history after goToStep
+[33mfe9f4a1[m HEAD@{331}: checkout: moving from develop to go-to-step
+[33m65ecedc[m HEAD@{332}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m17e0027[m HEAD@{333}: checkout: moving from MVP3-R0 to develop
+[33m2282e25[m HEAD@{334}: merge roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33md552842[m HEAD@{335}: checkout: moving from d552842b0827a5553698912c91a65fb84afe3510 to MVP3-R0
+[33md552842[m HEAD@{336}: checkout: moving from roya-MVP3-R0 to d552842b0827a5553698912c91a65fb84afe3510
+[33mf8f5323[m[33m ([m[1;32mroya-MVP3-R0[m[33m)[m HEAD@{337}: pull: Fast-forward
+[33mf8b46a7[m HEAD@{338}: checkout: moving from go-to-step to roya-MVP3-R0
+[33mfe9f4a1[m HEAD@{339}: checkout: moving from roya-MVP3-R0 to go-to-step
+[33mf8b46a7[m HEAD@{340}: checkout: moving from roya to roya-MVP3-R0
+[33m730b913[m HEAD@{341}: pull: Fast-forward
+[33m67597a7[m HEAD@{342}: checkout: moving from go-to-step to roya
+[33mfe9f4a1[m HEAD@{343}: commit: runing bot by goToStep type was implemented
+[33m4aef01a[m HEAD@{344}: checkout: moving from develop to go-to-step
+[33m17e0027[m HEAD@{345}: merge d552842b0827a5553698912c91a65fb84afe3510: Merge made by the 'ort' strategy.
+[33m41c8a6b[m HEAD@{346}: checkout: moving from MVP3-R0 to develop
+[33md552842[m HEAD@{347}: commit: add freeLinks to parent of deleted step
+[33m08ec5de[m HEAD@{348}: checkout: moving from go-to-step to MVP3-R0
+[33m4aef01a[m HEAD@{349}: checkout: moving from develop to go-to-step
+[33m41c8a6b[m HEAD@{350}: merge 08ec5de772c0b4ac3448c0e39d107b28532b761e: Merge made by the 'ort' strategy.
+[33m36728b1[m HEAD@{351}: checkout: moving from MVP3-R0 to develop
+[33m08ec5de[m HEAD@{352}: commit: Profile editing and user settings editing are separated
+[33mbf2aaf0[m HEAD@{353}: checkout: moving from develop to MVP3-R0
+[33m36728b1[m HEAD@{354}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m2c9e246[m HEAD@{355}: checkout: moving from roya-MVP3-R0 to develop
+[33mf8b46a7[m HEAD@{356}: checkout: moving from MVP3-R0 to roya-MVP3-R0
+[33mbf2aaf0[m HEAD@{357}: commit: doBotHandling bug in toInbox steps was fixed
+[33m774fad4[m HEAD@{358}: checkout: moving from go-to-step to MVP3-R0
+[33m4aef01a[m HEAD@{359}: commit: canHaveChild returns to false for gotToStep types
+[33mc8f4f01[m HEAD@{360}: checkout: moving from develop to go-to-step
+[33m2c9e246[m HEAD@{361}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m87cb706[m HEAD@{362}: checkout: moving from MVP3-R0 to develop
+[33m774fad4[m HEAD@{363}: merge roya-MVP3-R0: Merge made by the 'ort' strategy.
+[33mf635113[m HEAD@{364}: checkout: moving from develop to MVP3-R0
+[33m87cb706[m HEAD@{365}: merge roya: Merge made by the 'ort' strategy.
+[33m6b2e0e3[m HEAD@{366}: pull --tags origin develop: Fast-forward
+[33m1227f9f[m HEAD@{367}: checkout: moving from roya-MVP3-R0 to develop
+[33mf8b46a7[m HEAD@{368}: checkout: moving from MVP3-R0 to roya-MVP3-R0
+[33mf635113[m HEAD@{369}: checkout: moving from roya to MVP3-R0
+[33m67597a7[m HEAD@{370}: pull: Fast-forward
+[33m502f5f7[m HEAD@{371}: checkout: moving from go-to-step to roya
+[33mc8f4f01[m HEAD@{372}: commit: add goToStep 1
+[33m1fd266e[m HEAD@{373}: checkout: moving from develop to go-to-step
+[33m1227f9f[m HEAD@{374}: checkout: moving from go-to-step to develop
+[33m1fd266e[m HEAD@{375}: checkout: moving from develop to go-to-step
+[33m1227f9f[m HEAD@{376}: checkout: moving from MVP3-R0 to develop
+[33mf635113[m HEAD@{377}: checkout: moving from go-to-step to MVP3-R0
+[33m1fd266e[m HEAD@{378}: checkout: moving from MVP3-R0 to go-to-step
+[33mf635113[m HEAD@{379}: checkout: moving from develop to MVP3-R0
+[33m1227f9f[m HEAD@{380}: merge f635113eece2d5341876e8a98d3597ebae435d68: Merge made by the 'ort' strategy.
+[33m69552f1[m HEAD@{381}: checkout: moving from MVP3-R0 to develop
+[33mf635113[m HEAD@{382}: merge roya: Merge made by the 'ort' strategy.
+[33m741bd9e[m HEAD@{383}: checkout: moving from roya to MVP3-R0
+[33m502f5f7[m HEAD@{384}: pull: Fast-forward
+[33m806c178[m HEAD@{385}: checkout: moving from MVP3-R0 to roya
+[33m741bd9e[m HEAD@{386}: checkout: moving from go-to-step to MVP3-R0
+[33m1fd266e[m HEAD@{387}: checkout: moving from go-to-step to go-to-step
+[33m1fd266e[m HEAD@{388}: checkout: moving from develop to go-to-step
+[33m69552f1[m HEAD@{389}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33mdfad7f0[m HEAD@{390}: checkout: moving from MVP3-R0 to develop
+[33m741bd9e[m HEAD@{391}: merge roya: Merge made by the 'ort' strategy.
+[33m8956d3f[m HEAD@{392}: checkout: moving from develop to MVP3-R0
+[33mdfad7f0[m HEAD@{393}: checkout: moving from roya to develop
+[33m806c178[m HEAD@{394}: pull: Fast-forward
+[33m9ebccc4[m HEAD@{395}: checkout: moving from go-to-step to roya
+[33m1fd266e[m HEAD@{396}: commit: go to step implementation started
+[33mdfad7f0[m HEAD@{397}: checkout: moving from develop to go-to-step
+[33mdfad7f0[m HEAD@{398}: reset: moving to HEAD~
+[33m83d8694[m HEAD@{399}: commit: go to step implementation started
+[33mdfad7f0[m HEAD@{400}: checkout: moving from go-to-step to develop
+[33mdfad7f0[m HEAD@{401}: checkout: moving from develop to go-to-step
+[33mdfad7f0[m HEAD@{402}: commit: code cleande and documented
+[33m184ff4c[m HEAD@{403}: merge 8956d3fa4bda8d034ff9f4a648ae3485f8a485d0: Merge made by the 'ort' strategy.
+[33m3d16357[m HEAD@{404}: checkout: moving from MVP3-R0 to develop
+[33m8956d3f[m HEAD@{405}: commit: Deactivating inbox by viewing has been cancelled
+[33m10c33f1[m HEAD@{406}: checkout: moving from develop to MVP3-R0
+[33m3d16357[m HEAD@{407}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m09631cc[m HEAD@{408}: checkout: moving from MVP3-R0 to develop
+[33m10c33f1[m HEAD@{409}: commit: error logs wer added to scoring model erros
+[33mc0c9480[m HEAD@{410}: checkout: moving from develop to MVP3-R0
+[33m09631cc[m HEAD@{411}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m6eef5b8[m HEAD@{412}: checkout: moving from MVP3-R0 to develop
+[33mc0c9480[m HEAD@{413}: commit: bug fixed
+[33m789e3b7[m HEAD@{414}: checkout: moving from develop to MVP3-R0
+[33m6eef5b8[m HEAD@{415}: reset: moving to HEAD~
+[33m441a54d[m HEAD@{416}: commit: bug fixed
+[33m6eef5b8[m HEAD@{417}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33mb2436fd[m HEAD@{418}: checkout: moving from MVP3-R0 to develop
+[33m789e3b7[m HEAD@{419}: commit: change active to false after scoring an inbox
+[33mc1019f3[m HEAD@{420}: checkout: moving from develop to MVP3-R0
+[33mb2436fd[m HEAD@{421}: merge 9ebccc43c7dcf129cd42c24af34d22e66999f9ea: Merge made by the 'ort' strategy.
+[33m5c0e9ac[m HEAD@{422}: merge MVP3-R0: Merge made by the 'ort' strategy.
+[33m003ddd3[m HEAD@{423}: checkout: moving from MVP3-R0 to develop
+[33mc1019f3[m HEAD@{424}: commit: @firsname@ bug fixed
+[33m79c0ac3[m HEAD@{425}: checkout: moving from develop to MVP3-R0
+[33m003ddd3[m HEAD@{426}: merge 79c0ac39fff21fb3017ddd004523c28c915c4a37: Merge made by the 'ort' strategy.
+[33m86c7448[m HEAD@{427}: checkout: moving from MVP3-R0 to develop
+[33m79c0ac3[m HEAD@{428}: checkout: moving from develop to MVP3-R0
+[33m86c7448[m HEAD@{429}: checkout: moving from MVP3-R0 to develop
+[33m79c0ac3[m HEAD@{430}: checkout: moving from roya to MVP3-R0
+[33m9ebccc4[m HEAD@{431}: checkout: moving from roya to roya
+[33m9ebccc4[m HEAD@{432}: checkout: moving from MVP3-R0 to roya
+[33m79c0ac3[m HEAD@{433}: checkout: moving from roya to MVP3-R0
+[33m9ebccc4[m HEAD@{434}: pull: Fast-forward
+[33m3b9ba1a[m HEAD@{435}: checkout: moving from MVP3-R0 to roya
+[33m79c0ac3[m HEAD@{436}: checkout: moving from roya to MVP3-R0
+[33m3b9ba1a[m HEAD@{437}: checkout: moving from MVP3-R0 to roya
+[33m79c0ac3[m HEAD@{438}: commit: add sender firstName to my index
+[33m15d685d[m HEAD@{439}: checkout: moving from develop to MVP3-R0
+[33m86c7448[m HEAD@{440}: commit: trobleshooting bot API was implemented
+[33m15d685d[m HEAD@{441}: checkout: moving from MVP3-R0 to develop
+[33m15d685d[m HEAD@{442}: checkout: moving from develop to MVP3-R0
+[33m15d685d[m HEAD@{443}: commit: bug fixed
+[33m11ae7d8[m HEAD@{444}: commit: min score was added to inbox type steps
+[33m799ebae[m HEAD@{445}: checkout: moving from roya to develop
+[33m3b9ba1a[m HEAD@{446}: checkout: moving from develop to roya
+[33m799ebae[m HEAD@{447}: commit: edit fieldId & gradeId in profile bug fixed
+[33m283c433[m HEAD@{448}: merge roya: Merge made by the 'ort' strategy.
+[33m85028d5[m HEAD@{449}: checkout: moving from roya to develop
+[33m3b9ba1a[m HEAD@{450}: pull: Fast-forward
+[33m5877063[m HEAD@{451}: checkout: moving from develop to roya
+[33m85028d5[m HEAD@{452}: commit: code cleande
+[33m894d8de[m HEAD@{453}: commit: field and graded were changed
+[33m958d11a[m HEAD@{454}: commit: code documentatino
+[33mb9eff3b[m HEAD@{455}: commit: change role was added
+[33mfeae75c[m HEAD@{456}: commit: code improved
+[33ma5dd0f2[m HEAD@{457}: commit: role index API was added to superAdmin panel
+[33m962d2ee[m HEAD@{458}: reset: moving to HEAD~
+[33m8276f88[m HEAD@{459}: commit: role index API was added to superAdmin panel
+[33m962d2ee[m HEAD@{460}: commit: view user info was added for superAdmin panel
+[33m4b0eb54[m HEAD@{461}: merge roya: Merge made by the 'ort' strategy.
+[33m9ef3b66[m HEAD@{462}: checkout: moving from roya to develop
+[33m5877063[m HEAD@{463}: pull: Fast-forward
+[33mbccc169[m HEAD@{464}: checkout: moving from develop to roya
+[33m9ef3b66[m HEAD@{465}: pull: Fast-forward
+[33m7eef208[m HEAD@{466}: commit: isFirstLogin params was removed from check cookie api
+[33m68437db[m HEAD@{467}: commit: login detection for the first time was added
+[33m5b34e30[m HEAD@{468}: reset: moving to HEAD~
+[33ma2110e4[m HEAD@{469}: commit: login detection for the first time was added
+[33m5b34e30[m HEAD@{470}: commit: Delete files related to deleted bot
+[33m826d575[m HEAD@{471}: commit: Delete files related to deleted bot
+[33mf570f3c[m HEAD@{472}: commit: @firstName was changed to @firstname@ to easy
+[33mc5c98ca[m HEAD@{473}: pull: Fast-forward
+[33m06558b2[m HEAD@{474}: merge roya: Merge made by the 'ort' strategy.
+[33mfe6bfb7[m HEAD@{475}: checkout: moving from roya to develop
+[33mbccc169[m HEAD@{476}: checkout: moving from develop to roya
+[33mfe6bfb7[m HEAD@{477}: checkout: moving from roya to develop
+[33mbccc169[m HEAD@{478}: pull --tags origin roya: Fast-forward
+[33md079a10[m HEAD@{479}: checkout: moving from develop to roya
+[33mfe6bfb7[m HEAD@{480}: pull: Fast-forward
+[33me98329c[m HEAD@{481}: commit: upload & delete bot avatar was added
+[33m4c29741[m HEAD@{482}: commit: canHaveChild of parent bug fixing in delete step
+[33m49ff45c[m HEAD@{483}: commit: canHaveChild handeling in edit isLast parameter of step
+[33m3c8e419[m HEAD@{484}: commit: numericKeyboard handling was added in edit
+[33m836aa34[m HEAD@{485}: commit: Prevent editing the start step
+[33m211e9a7[m HEAD@{486}: commit: edit some step parameters api was added
+[33mb9685d2[m HEAD@{487}: commit (merge): Merge branch 'roya' into develop
+[33m8f68c98[m HEAD@{488}: checkout: moving from roya to develop
+[33md079a10[m HEAD@{489}: checkout: moving from develop to roya
+[33m8f68c98[m HEAD@{490}: checkout: moving from roya to develop
+[33md079a10[m HEAD@{491}: pull --tags origin roya: Fast-forward
+[33m3e88770[m HEAD@{492}: checkout: moving from develop to roya
+[33m8f68c98[m HEAD@{493}: reset: moving to HEAD
+[33m8f68c98[m HEAD@{494}: pull --tags origin develop: Fast-forward
+[33me91b2f2[m HEAD@{495}: commit: grade & field Study was added to user ifno
+[33md55557e[m HEAD@{496}: commit: model error logs handling was added to bot edit
+[33m8ce8d5f[m HEAD@{497}: commit: change isFree parameter for bots was added to edit
+[33mf3d6f1c[m HEAD@{498}: commit: active & inactive bots was added for teachers
+[33m0967fe3[m HEAD@{499}: merge 3e887707cce99f1d4d9a739c134602b424a59f37: Merge made by the 'ort' strategy.
+[33m723549e[m HEAD@{500}: checkout: moving from roya to develop
+[33m3e88770[m HEAD@{501}: pull --tags origin roya: Fast-forward
+[33m0197869[m HEAD@{502}: checkout: moving from develop to roya
+[33m723549e[m HEAD@{503}: commit: all user information was added to checkCookie API
+[33mea7eae0[m HEAD@{504}: checkout: moving from roya to develop
+[33m0197869[m HEAD@{505}: pull: Fast-forward
+[33m3c3fd11[m HEAD@{506}: checkout: moving from develop to roya
+[33mea7eae0[m HEAD@{507}: commit: delete step was implemented
+[33m0e69d23[m HEAD@{508}: commit: firstName & lastName was added to checkCookie API
+[33m807106b[m HEAD@{509}: commit: replacing userFirstName was added to step text
+[33m4a84dc5[m HEAD@{510}: commit: result bot index data was fixed
+[33ma220ca4[m HEAD@{511}: commit: sso testing routes was added
+[33m2991366[m HEAD@{512}: commit: testing api for ssoLogin was added to each panels
+[33m6b77396[m HEAD@{513}: checkout: moving from mvp2-R0 to develop
+[33mbd4a950[m HEAD@{514}: checkout: moving from develop to mvp2-R0
+[33m6b77396[m HEAD@{515}: pull: Fast-forward
+[33m86a89a9[m HEAD@{516}: merge roya: Merge made by the 'ort' strategy.
+[33m23c16d6[m HEAD@{517}: checkout: moving from roya to develop
+[33m3c3fd11[m HEAD@{518}: commit: code cleaning
+[33m88591ce[m HEAD@{519}: pull: Fast-forward
+[33m3b9a12f[m HEAD@{520}: checkout: moving from develop to roya
+[33m23c16d6[m HEAD@{521}: commit: delete one bot by all its steps was implemented
+[33mf967489[m HEAD@{522}: checkout: moving from roya to develop
+[33m3b9a12f[m HEAD@{523}: checkout: moving from develop to roya
+[33mf967489[m HEAD@{524}: pull: Fast-forward
+[33meab3670[m HEAD@{525}: checkout: moving from roya to develop
+[33m3b9a12f[m HEAD@{526}: pull --tags origin roya: Fast-forward
+[33m1ad3583[m HEAD@{527}: checkout: moving from develop to roya
+[33meab3670[m HEAD@{528}: checkout: moving from mvp2-R0 to develop
+[33mbd4a950[m HEAD@{529}: checkout: moving from develop to mvp2-R0
+[33meab3670[m HEAD@{530}: merge roya: Merge made by the 'ort' strategy.
+[33m79e887c[m HEAD@{531}: checkout: moving from roya to develop
+[33m1ad3583[m HEAD@{532}: checkout: moving from develop to roya
+[33m79e887c[m HEAD@{533}: checkout: moving from develop to develop
+[33m79e887c[m HEAD@{534}: reset: moving to HEAD~
+[33m4052d58[m HEAD@{535}: merge roya: Merge made by the 'ort' strategy.
+[33m79e887c[m HEAD@{536}: checkout: moving from roya to develop
+[33m1ad3583[m HEAD@{537}: commit: error logger was added for model errors
+[33m8f2078a[m HEAD@{538}: commit: system roles name were placed in the env file
+[33m2c4a19f[m HEAD@{539}: reset: moving to HEAD~
+[33m75e299d[m HEAD@{540}: commit: system roles name were placed in the env file
+[33m2c4a19f[m HEAD@{541}: reset: moving to HEAD~
+[33m137182b[m HEAD@{542}: commit: system roles name were placed in the env file
+[33m2c4a19f[m HEAD@{543}: pull: Fast-forward
+[33m9258b3c[m HEAD@{544}: checkout: moving from develop to roya
+[33m79e887c[m HEAD@{545}: commit: checking over limit of scoring in inbox was added
+[33m4afb5f9[m HEAD@{546}: checkout: moving from roya to develop
+[33m9258b3c[m HEAD@{547}: checkout: moving from roya to roya
+[33m9258b3c[m HEAD@{548}: checkout: moving from develop to roya
+[33m4afb5f9[m HEAD@{549}: checkout: moving from roya to develop
+[33m9258b3c[m HEAD@{550}: checkout: moving from develop to roya
+[33m4afb5f9[m HEAD@{551}: commit: The ability to send files to inbox was added
+[33m56f1c96[m HEAD@{552}: reset: moving to HEAD~
+[33maa69531[m HEAD@{553}: commit: The ability to send files to inbox was added
+[33m56f1c96[m HEAD@{554}: checkout: moving from mvp2-R0 to develop
+[33mbd4a950[m HEAD@{555}: checkout: moving from develop to mvp2-R0
+[33m56f1c96[m HEAD@{556}: commit: update of user profile score was added during bot execution
+[33ma1cedbf[m HEAD@{557}: commit: scoring was added to inbox
+[33m814b6ec[m HEAD@{558}: reset: moving to HEAD~
+[33mc350b59[m HEAD@{559}: commit: scoring was added to inbox
+[33m814b6ec[m HEAD@{560}: commit: change active status of messages was implemented
+[33m1ba54cb[m HEAD@{561}: commit: view single message of inbox was implemented
+[33mc304f33[m HEAD@{562}: commit: step id was added to inbox data
+[33m1b9b39d[m HEAD@{563}: commit: saving in history bug in ToInbox type step fixed
+[33mc12c0de[m HEAD@{564}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33meaad3e5[m HEAD@{565}: checkout: moving from mvp2-R0 to develop
+[33mbd4a950[m HEAD@{566}: commit: started step id was added to result add bot
+[33mea2da46[m HEAD@{567}: checkout: moving from develop to mvp2-R0
+[33meaad3e5[m HEAD@{568}: reset: moving to HEAD
+[33meaad3e5[m HEAD@{569}: pull --tags origin develop: Fast-forward
+[33m6c2d764[m HEAD@{570}: checkout: moving from temporary-m3 to develop
+[33m680cd81[m[33m ([m[1;31morigin/temporary-m3[m[33m, [m[1;32mtemporary-m3[m[33m)[m HEAD@{571}: checkout: moving from develop to temporary-m3
+[33m6c2d764[m HEAD@{572}: merge temporary-m3: Merge made by the 'ort' strategy.
+[33me46b493[m HEAD@{573}: checkout: moving from temporary-m3 to develop
+[33m680cd81[m[33m ([m[1;31morigin/temporary-m3[m[33m, [m[1;32mtemporary-m3[m[33m)[m HEAD@{574}: commit: index my inbox was implemented
+[33m0a4d448[m HEAD@{575}: commit: sending to inbox was added to socket
+[33mbb18138[m HEAD@{576}: commit: bug fixed
+[33mf0eb7fa[m HEAD@{577}: commit: prerequisites bots name was added to index bot for superAdmin
+[33mae3d011[m HEAD@{578}: commit: socket toInbox step runing
+[33med17ed3[m HEAD@{579}: reset: moving to HEAD~
+[33m687031e[m HEAD@{580}: commit: socket toInbox step runing
+[33med17ed3[m HEAD@{581}: commit: create to inbox type of step in bot
+[33m3d01209[m HEAD@{582}: checkout: moving from mvp2-R0 to temporary-m3
+[33mea2da46[m HEAD@{583}: checkout: moving from mvp2-R0 to mvp2-R0
+[33mea2da46[m HEAD@{584}: checkout: moving from temporary-m3 to mvp2-R0
+[33m3d01209[m HEAD@{585}: checkout: moving from mvp2-R0 to temporary-m3
+[33mea2da46[m HEAD@{586}: checkout: moving from temporary-m3 to mvp2-R0
+[33m3d01209[m HEAD@{587}: checkout: moving from develop to temporary-m3
+[33me46b493[m HEAD@{588}: reset: moving to HEAD~
+[33md35487d[m HEAD@{589}: commit: ignoring env file
+[33me46b493[m HEAD@{590}: checkout: moving from temporary-m3 to develop
+[33m3d01209[m HEAD@{591}: checkout: moving from develop to temporary-m3
+[33me46b493[m HEAD@{592}: checkout: moving from temporary-m3 to develop
+[33m3d01209[m HEAD@{593}: checkout: moving from mvp2-R0 to temporary-m3
+[33mea2da46[m HEAD@{594}: reset: moving to HEAD
+[33mea2da46[m HEAD@{595}: merge origin/mvp2-R0: Merge made by the 'ort' strategy.
+[33mc0a30ef[m HEAD@{596}: reset: moving to HEAD
+[33mc0a30ef[m HEAD@{597}: checkout: moving from develop to mvp2-R0
+[33me46b493[m HEAD@{598}: checkout: moving from temporary-m3 to develop
+[33m3d01209[m HEAD@{599}: commit: add and delete background img & audio was added to bots
+[33mf92f19f[m HEAD@{600}: reset: moving to HEAD~
+[33ma34535f[m HEAD@{601}: commit: add and delete background img & audio was added to bots
+[33mf92f19f[m HEAD@{602}: checkout: moving from mvp2-R0 to temporary-m3
+[33mc0a30ef[m HEAD@{603}: checkout: moving from develop to mvp2-R0
+[33me46b493[m HEAD@{604}: checkout: moving from temporary-m3 to develop
+[33mf92f19f[m HEAD@{605}: merge develop: Merge made by the 'ort' strategy.
+[33m737cdaf[m HEAD@{606}: checkout: moving from develop to temporary-m3
+[33me46b493[m HEAD@{607}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m05d9b89[m HEAD@{608}: checkout: moving from mvp2-R0 to develop
+[33mc0a30ef[m HEAD@{609}: commit: step max time was added to history data
+[33mb7628f1[m HEAD@{610}: checkout: moving from temporary-m3 to mvp2-R0
+[33m737cdaf[m HEAD@{611}: checkout: moving from develop to temporary-m3
+[33m05d9b89[m HEAD@{612}: checkout: moving from mvp2-R0 to develop
+[33mb7628f1[m HEAD@{613}: checkout: moving from temporary-m3 to mvp2-R0
+[33m737cdaf[m HEAD@{614}: checkout: moving from mvp2-R0 to temporary-m3
+[33mb7628f1[m HEAD@{615}: checkout: moving from temporary-m3 to mvp2-R0
+[33m737cdaf[m HEAD@{616}: merge develop: Merge made by the 'ort' strategy.
+[33ma97188b[m HEAD@{617}: checkout: moving from develop to temporary-m3
+[33m05d9b89[m HEAD@{618}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33med0b732[m HEAD@{619}: checkout: moving from mvp2-R0 to develop
+[33mb7628f1[m HEAD@{620}: checkout: moving from mvp2-R0 to mvp2-R0
+[33mb7628f1[m HEAD@{621}: commit: currentService is dynamically defined in ssoLogin
+[33m5dd7ffb[m HEAD@{622}: checkout: moving from develop to mvp2-R0
+[33med0b732[m HEAD@{623}: checkout: moving from temporary-m3 to develop
+[33ma97188b[m HEAD@{624}: merge develop: Merge made by the 'ort' strategy.
+[33m2d69b31[m HEAD@{625}: checkout: moving from develop to temporary-m3
+[33med0b732[m HEAD@{626}: checkout: moving from temporary-m3 to develop
+[33m2d69b31[m HEAD@{627}: checkout: moving from develop to temporary-m3
+[33med0b732[m HEAD@{628}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33mecab33b[m HEAD@{629}: checkout: moving from mvp2-R0 to develop
+[33m5dd7ffb[m HEAD@{630}: commit: a socket event was changed
+[33m305a03a[m HEAD@{631}: commit: delay was added to all -6 code messages
+[33m3975ee9[m HEAD@{632}: checkout: moving from temporary-m3 to mvp2-R0
+[33m2d69b31[m HEAD@{633}: merge develop: Merge made by the 'ort' strategy.
+[33m22dd088[m HEAD@{634}: checkout: moving from develop to temporary-m3
+[33mecab33b[m HEAD@{635}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33mbf96b84[m HEAD@{636}: checkout: moving from mvp2-R0 to develop
+[33m3975ee9[m HEAD@{637}: commit: search on step options was removed
+[33me9dc7cc[m HEAD@{638}: checkout: moving from develop to mvp2-R0
+[33mbf96b84[m HEAD@{639}: checkout: moving from mvp2-R0 to develop
+[33me9dc7cc[m HEAD@{640}: checkout: moving from temporary-m3 to mvp2-R0
+[33m22dd088[m HEAD@{641}: checkout: moving from mvp2-R0 to temporary-m3
+[33me9dc7cc[m HEAD@{642}: checkout: moving from develop to mvp2-R0
+[33mbf96b84[m HEAD@{643}: checkout: moving from temporary-m3 to develop
+[33m22dd088[m HEAD@{644}: checkout: moving from temporary-m3 to temporary-m3
+[33m22dd088[m HEAD@{645}: merge develop: Merge made by the 'ort' strategy.
+[33mffa896b[m HEAD@{646}: checkout: moving from develop to temporary-m3
+[33mbf96b84[m HEAD@{647}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m19beff3[m HEAD@{648}: checkout: moving from mvp2-R0 to develop
+[33me9dc7cc[m HEAD@{649}: commit: delay was applied to message code -6
+[33mea9427d[m HEAD@{650}: checkout: moving from develop to mvp2-R0
+[33m19beff3[m HEAD@{651}: checkout: moving from temporary-m3 to develop
+[33mffa896b[m HEAD@{652}: merge develop: Merge made by the 'ort' strategy.
+[33mfb7843e[m HEAD@{653}: checkout: moving from develop to temporary-m3
+[33m19beff3[m HEAD@{654}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33ma253ee6[m HEAD@{655}: checkout: moving from mvp2-R0 to develop
+[33mea9427d[m HEAD@{656}: checkout: moving from temporary-m3 to mvp2-R0
+[33mfb7843e[m HEAD@{657}: checkout: moving from develop to temporary-m3
+[33ma253ee6[m HEAD@{658}: checkout: moving from temporary-m3 to develop
+[33mfb7843e[m HEAD@{659}: checkout: moving from develop to temporary-m3
+[33ma253ee6[m HEAD@{660}: checkout: moving from mvp2-R0 to develop
+[33mea9427d[m HEAD@{661}: commit: personality name was added to search history result
+[33m8dba131[m HEAD@{662}: checkout: moving from mvp2-R0 to mvp2-R0
+[33m8dba131[m HEAD@{663}: checkout: moving from temporary-m3 to mvp2-R0
+[33mfb7843e[m HEAD@{664}: checkout: moving from develop to temporary-m3
+[33ma253ee6[m HEAD@{665}: checkout: moving from temporary-m3 to develop
+[33mfb7843e[m HEAD@{666}: merge develop: Merge made by the 'ort' strategy.
+[33m6aa518a[m HEAD@{667}: checkout: moving from develop to temporary-m3
+[33ma253ee6[m HEAD@{668}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m1038152[m HEAD@{669}: checkout: moving from develop to develop
+[33m1038152[m HEAD@{670}: checkout: moving from temporary-m3 to develop
+[33m6aa518a[m HEAD@{671}: checkout: moving from mvp2-R0 to temporary-m3
+[33m8dba131[m HEAD@{672}: checkout: moving from temporary-m3 to mvp2-R0
+[33m6aa518a[m HEAD@{673}: checkout: moving from develop to temporary-m3
+[33m1038152[m HEAD@{674}: checkout: moving from mvp2-R0 to develop
+[33m8dba131[m HEAD@{675}: commit: personality avatar was added to search on doBot data
+[33m9e0f235[m HEAD@{676}: checkout: moving from mvp2-R0 to mvp2-R0
+[33m9e0f235[m HEAD@{677}: checkout: moving from develop to mvp2-R0
+[33m1038152[m HEAD@{678}: checkout: moving from temporary-m3 to develop
+[33m6aa518a[m HEAD@{679}: merge develop: Merge made by the 'ort' strategy.
+[33m14cc3e6[m HEAD@{680}: checkout: moving from develop to temporary-m3
+[33m1038152[m HEAD@{681}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m10c9269[m HEAD@{682}: checkout: moving from mvp2-R0 to develop
+[33m9e0f235[m HEAD@{683}: commit: errror message codes were improved
+[33m00084d8[m HEAD@{684}: commit: errore messages were improved
+[33m4deee09[m HEAD@{685}: checkout: moving from temporary-m3 to mvp2-R0
+[33m14cc3e6[m HEAD@{686}: checkout: moving from develop to temporary-m3
+[33m10c9269[m HEAD@{687}: checkout: moving from temporary-m3 to develop
+[33m14cc3e6[m HEAD@{688}: merge develop: Merge made by the 'ort' strategy.
+[33m447ae1d[m HEAD@{689}: checkout: moving from develop to temporary-m3
+[33m10c9269[m HEAD@{690}: checkout: moving from develop to develop
+[33m10c9269[m HEAD@{691}: checkout: moving from develop to develop
+[33m10c9269[m HEAD@{692}: checkout: moving from temporary-m3 to develop
+[33m447ae1d[m HEAD@{693}: checkout: moving from temporary-m3 to temporary-m3
+[33m447ae1d[m HEAD@{694}: checkout: moving from develop to temporary-m3
+[33m10c9269[m HEAD@{695}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33mf589b97[m HEAD@{696}: checkout: moving from mvp2-R0 to develop
+[33m4deee09[m HEAD@{697}: commit: history bug fixed
+[33m0967bd6[m HEAD@{698}: checkout: moving from 0967bd68e84e884a9fbe7fe34233b8e52e162f2c to mvp2-R0
+[33m0967bd6[m HEAD@{699}: checkout: moving from b9879e8446d973e5dd1f28d30cd7f5f9b1cf76d4 to 0967bd68e84e884a9fbe7fe34233b8e52e162f2c
+[33mb9879e8[m HEAD@{700}: checkout: moving from 69120aa9d970726101421bd0743f907323012267 to b9879e8446d973e5dd1f28d30cd7f5f9b1cf76d4
+[33m69120aa[m HEAD@{701}: checkout: moving from mvp2-R0 to 69120aa9d970726101421bd0743f907323012267
+[33m0967bd6[m HEAD@{702}: checkout: moving from temporary-m3 to mvp2-R0
+[33m447ae1d[m HEAD@{703}: checkout: moving from develop to temporary-m3
+[33mf589b97[m HEAD@{704}: checkout: moving from mvp2-R0 to develop
+[33m0967bd6[m HEAD@{705}: checkout: moving from temporary-m3 to mvp2-R0
+[33m447ae1d[m HEAD@{706}: merge develop: Merge made by the 'ort' strategy.
+[33m197f554[m HEAD@{707}: checkout: moving from develop to temporary-m3
+[33mf589b97[m HEAD@{708}: merge mvp2-R0: Merge made by the 'ort' strategy.
+[33m197f554[m HEAD@{709}: checkout: moving from mvp2-R0 to develop
+[33m0967bd6[m HEAD@{710}: commit: Implemented bot re-caching in Redis for re-execution
+[33m69120aa[m HEAD@{711}: checkout: moving from develop to mvp2-R0
+[33m197f554[m HEAD@{712}: checkout: moving from temporary-m3 to develop
+[33m197f554[m HEAD@{713}: checkout: moving from develop to temporary-m3
+[33m197f554[m HEAD@{714}: commit: code cleaned
+[33m69120aa[m HEAD@{715}: checkout: moving from mvp2-R0 to develop
+[33m69120aa[m HEAD@{716}: checkout: moving from develop to mvp2-R0
+[33m69120aa[m HEAD@{717}: commit: search on doBot improved
+[33mb9879e8[m HEAD@{718}: commit: response of bots bug fixed
+[33m7f00a6c[m HEAD@{719}: commit: accessToPanel middleware was added for superAdmin routes
+[33me3802ce[m HEAD@{720}: commit: rol bug in refreshTocken fixed
+[33m2fd38b7[m HEAD@{721}: commit: bug fixed
+[33m3c50562[m HEAD@{722}: commit: bot index bug fixed
+[33mb2a8c10[m HEAD@{723}: commit: sort type bug fixed
+[33m1fcaf76[m HEAD@{724}: commit: super admin bot listing was added
+[33m815ce59[m HEAD@{725}: reset: moving to HEAD~
+[33mb544d90[m HEAD@{726}: commit: super admin bot listing was added
+[33m815ce59[m HEAD@{727}: commit: code cleaned
+[33m81d1ac2[m HEAD@{728}: commit: filter by role name bug fixed
+[33m42b2e67[m HEAD@{729}: commit: get list of users in superAdmin panel was added
+[33mba0efad[m HEAD@{730}: pull --tags origin develop: Fast-forward
+[33m2e281a6[m HEAD@{731}: commit: code cleaning
+[33m048a20a[m HEAD@{732}: commit: getServerTime event was binded
+[33m9632afa[m HEAD@{733}: commit: Sending correct or incorrect response of the user
+[33m1b213a6[m HEAD@{734}: commit: code cleaning
+[33mfdd6ab9[m HEAD@{735}: commit: search on doBot implementation
+[33m513f3d6[m HEAD@{736}: commit: code cleaning
+[33m69d9bef[m HEAD@{737}: pull --tags origin develop: Fast-forward
+[33m14db7cf[m HEAD@{738}: pull --tags origin develop: Fast-forward
+[33me420d12[m HEAD@{739}: pull --tags origin develop: Fast-forward
+[33m4f4a9cc[m HEAD@{740}: pull --tags origin develop: Fast-forward
+[33m1b90cb7[m HEAD@{741}: pull --tags origin develop: Fast-forward
+[33m7003c20[m HEAD@{742}: pull --tags origin develop: Fast-forward
+[33m7b8fa7c[m HEAD@{743}: commit: swagger was updated
+[33m780e60e[m HEAD@{744}: commit: update themeNumber bug fix
+[33m4333bcf[m HEAD@{745}: commit: maxtimeBotHandling bug fixed
+[33mb044ac8[m HEAD@{746}: commit: number of run and finish bot was added
+[33m70b3104[m HEAD@{747}: commit: reset accessToken cookie in refrrsh token API
+[33mb7aeed7[m HEAD@{748}: commit: code cleaning
+[33m02f8104[m HEAD@{749}: commit: personality avatar was added to doBot
+[33me406e22[m HEAD@{750}: commit: code refactored
+[33m7637773[m HEAD@{751}: commit: x token unnecessary
+[33mbedd7d4[m HEAD@{752}: pull: Fast-forward
+[33m95cc2c2[m HEAD@{753}: commit: code cleaning
+[33me683ce7[m HEAD@{754}: commit: run testMode implemented
+[33m7130cb7[m HEAD@{755}: commit: code cleaning
+[33m1e4c50b[m HEAD@{756}: pull: Fast-forward
+[33m3a6b690[m HEAD@{757}: pull: Fast-forward
+[33md3ab16c[m HEAD@{758}: commit: domain to set cookie was improved
+[33mf443829[m HEAD@{759}: pull: Fast-forward
+[33m787ec35[m HEAD@{760}: pull: Fast-forward
+[33mdb7bad3[m HEAD@{761}: pull --tags origin develop: Fast-forward
+[33mb20cac3[m HEAD@{762}: checkout: moving from mvp1-R0 to develop
+[33ma7866f8[m[33m ([m[1;31morigin/mvp1-R0[m[33m, [m[1;32mmvp1-R0[m[33m)[m HEAD@{763}: checkout: moving from develop to mvp1-R0
+[33mb20cac3[m HEAD@{764}: reset: moving to HEAD
+[33mb20cac3[m HEAD@{765}: merge mvp1-R0: Merge made by the 'ort' strategy.
+[33m13d60fc[m HEAD@{766}: checkout: moving from mvp1-R0 to develop
+[33ma7866f8[m[33m ([m[1;31morigin/mvp1-R0[m[33m, [m[1;32mmvp1-R0[m[33m)[m HEAD@{767}: commit: "/" was added to fileUrl
+[33me28e138[m HEAD@{768}: checkout: moving from develop to mvp1-R0
+[33m13d60fc[m HEAD@{769}: reset: moving to HEAD
+[33m13d60fc[m HEAD@{770}: commit (merge): Merge branch 'mvp1-R0' into develop
+[33m776fe4e[m HEAD@{771}: checkout: moving from mvp1-R0 to develop
+[33me28e138[m HEAD@{772}: commit: file path in delete user avatar bug fixed
+[33mb88f411[m HEAD@{773}: commit: file urls were improved
+[33m2390175[m HEAD@{774}: checkout: moving from develop to mvp1-R0
+[33m776fe4e[m HEAD@{775}: checkout: moving from mvp1-R0 to develop
+[33m2390175[m HEAD@{776}: reset: moving to origin/mvp1-R0
+[33m13697d1[m HEAD@{777}: checkout: moving from develop to mvp1-R0
+[33m776fe4e[m HEAD@{778}: reset: moving to HEAD
+[33m776fe4e[m HEAD@{779}: checkout: moving from mvp1-R0 to develop
+[33m13697d1[m HEAD@{780}: checkout: moving from develop to mvp1-R0
+[33m776fe4e[m HEAD@{781}: pull: Fast-forward
+[33m93c80a2[m HEAD@{782}: checkout: moving from mvp1-R0 to develop
+[33m13697d1[m HEAD@{783}: checkout: moving from develop to mvp1-R0
+[33m93c80a2[m HEAD@{784}: checkout: moving from mvp1-R0 to develop
+[33m13697d1[m HEAD@{785}: checkout: moving from develop to mvp1-R0
+[33m93c80a2[m HEAD@{786}: checkout: moving from mvp1-R0 to develop
+[33m13697d1[m HEAD@{787}: checkout: moving from develop to mvp1-R0
+[33m93c80a2[m HEAD@{788}: checkout: moving from mvp1-R0 to develop
+[33m13697d1[m HEAD@{789}: checkout: moving from develop to mvp1-R0
+[33m93c80a2[m HEAD@{790}: commit (merge): Merge branch 'mvp1-R0' into develop
+[33mbaccc0e[m HEAD@{791}: checkout: moving from mvp1-R0 to develop
+[33m13697d1[m HEAD@{792}: commit: gitignore file improved
+[33m0223b7e[m HEAD@{793}: reset: moving to HEAD~
+[33m2390175[m HEAD@{794}: reset: moving to HEAD~
+[33m291afd8[m HEAD@{795}: commit: local env
+[33m2390175[m HEAD@{796}: commit: gitignore file improved
+[33m0223b7e[m HEAD@{797}: checkout: moving from develop to mvp1-R0
+[33mbaccc0e[m HEAD@{798}: reset: moving to HEAD
+[33mbaccc0e[m HEAD@{799}: checkout: moving from mvp1-R0 to develop
+[33m0223b7e[m HEAD@{800}: checkout: moving from develop to mvp1-R0
+[33mbaccc0e[m HEAD@{801}: checkout: moving from mvp1-R0 to develop
+[33m0223b7e[m HEAD@{802}: checkout: moving from develop to mvp1-R0
+[33mbaccc0e[m HEAD@{803}: commit (merge): Merge branch 'mvp1-R0' into develop
+[33m2a900f3[m HEAD@{804}: checkout: moving from mvp1-R0 to develop
+[33m0223b7e[m HEAD@{805}: commit: app-logs folder volume was added
+[33mf2fb50a[m[33m ([m[1;31morigin/test[m[33m)[m HEAD@{806}: checkout: moving from develop to mvp1-R0
+[33m2a900f3[m HEAD@{807}: reset: moving to HEAD
+[33m2a900f3[m HEAD@{808}: checkout: moving from develop to develop
+[33m2a900f3[m HEAD@{809}: checkout: moving from test to develop
+[33mf2fb50a[m[33m ([m[1;31morigin/test[m[33m)[m HEAD@{810}: checkout: moving from develop to test
+[33m2a900f3[m HEAD@{811}: reset: moving to HEAD
+[33m2a900f3[m HEAD@{812}: reset: moving to HEAD
+[33m2a900f3[m HEAD@{813}: reset: moving to HEAD
+[33m2a900f3[m HEAD@{814}: reset: moving to HEAD
+[33m2a900f3[m HEAD@{815}: commit (merge): Merge branch 'test' into develop
+[33mee19ed5[m HEAD@{816}: checkout: moving from test to develop
+[33mf2fb50a[m[33m ([m[1;31morigin/test[m[33m)[m HEAD@{817}: commit: uploads folder volumes was added
+[33m6d730d4[m HEAD@{818}: checkout: moving from develop to test
+[33mee19ed5[m HEAD@{819}: reset: moving to HEAD
+[33mee19ed5[m HEAD@{820}: checkout: moving from test to develop
+[33m6d730d4[m HEAD@{821}: checkout: moving from develop to test
+[33mee19ed5[m HEAD@{822}: checkout: moving from test to develop
+[33m6d730d4[m HEAD@{823}: checkout: moving from develop to test
+[33mee19ed5[m HEAD@{824}: reset: moving to HEAD
+[33mee19ed5[m HEAD@{825}: checkout: moving from main to develop
+[33m9229ead[m HEAD@{826}: checkout: moving from develop to main
+[33mee19ed5[m HEAD@{827}: commit: Prerequisite bots information has been returned
+[33m47edbdf[m HEAD@{828}: commit: sending Repetitive lesson subject andprerequisitesId was prevented
+[33m95a0f31[m HEAD@{829}: commit: adding prerequisitesId to the bot was added
+[33md701b05[m HEAD@{830}: commit: adding lessons and subject to the bot was added
+[33mf1c7df1[m HEAD@{831}: commit: subject & lesson & prerequisitesId was added to bot swagger & schema
+[33m9229ead[m HEAD@{832}: checkout: moving from test to develop
+[33m6d730d4[m HEAD@{833}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{834}: checkout: moving from test to develop
+[33m6d730d4[m HEAD@{835}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{836}: checkout: moving from test to develop
+[33m6d730d4[m HEAD@{837}: cherry-pick: result add Bot was added to add api res
+[33md16ba80[m HEAD@{838}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{839}: checkout: moving from test to develop
+[33md16ba80[m HEAD@{840}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{841}: checkout: moving from test to develop
+[33md16ba80[m HEAD@{842}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{843}: checkout: moving from test to develop
+[33md16ba80[m HEAD@{844}: pull: Fast-forward
+[33m459e9c4[m HEAD@{845}: reset: moving to HEAD~
+[33mad04000[m HEAD@{846}: reset: moving to HEAD
+[33mad04000[m HEAD@{847}: commit: subject & lesson was added to swagger & schema
+[33m459e9c4[m HEAD@{848}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{849}: checkout: moving from test to develop
+[33m459e9c4[m HEAD@{850}: cherry-pick: index free bots api was added
+[33m950a34a[m HEAD@{851}: cherry-pick: upload file bug fixed
+[33mef6623d[m HEAD@{852}: cherry-pick: add personality to steps bug fixed
+[33m8d559e0[m HEAD@{853}: cherry-pick: my personality bug fixed
+[33mb374baa[m HEAD@{854}: reset: moving to b374baa0b44938194d56a677728e38ba2cafb75e
+[33m2a20bd8[m HEAD@{855}: cherry-pick: dobot scheme was added
+[33mb374baa[m HEAD@{856}: checkout: moving from main to test
+[33m9229ead[m HEAD@{857}: reset: moving to 9229ead8a77aa48f7db4701413b06c57fa7fc7d5
+[33m9229ead[m HEAD@{858}: checkout: moving from main to main
+[33m9229ead[m HEAD@{859}: checkout: moving from main to main
+[33m9229ead[m HEAD@{860}: checkout: moving from test to main
+[33mb374baa[m HEAD@{861}: reset: moving to b374baa0b44938194d56a677728e38ba2cafb75e
+[33m9229ead[m HEAD@{862}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{863}: checkout: moving from doBot to develop
+[33m25e58df[m[33m ([m[1;32mdoBot[m[33m)[m HEAD@{864}: checkout: moving from test to doBot
+[33m9229ead[m HEAD@{865}: checkout: moving from develop to test
+[33m9229ead[m HEAD@{866}: reset: moving to HEAD
+[33m9229ead[m HEAD@{867}: checkout: moving from main to develop
+[33m9229ead[m HEAD@{868}: checkout: moving from develop to main
+[33m9229ead[m HEAD@{869}: checkout: moving from main to develop
+[33m9229ead[m HEAD@{870}: commit: gender & birthDate was added to user
+[33ma71dbf2[m HEAD@{871}: commit: Temporary change to work with userId
+[33m584404b[m HEAD@{872}: commit: user validator was added for day mode and ...
+[33m352d5eb[m HEAD@{873}: reset: moving to HEAD~
+[33m62c7244[m HEAD@{874}: commit: user validator was added for day mode and ...
+[33m352d5eb[m HEAD@{875}: commit: update profile completed for dateMode and ...
+[33m67e8272[m HEAD@{876}: commit: soundMode & dayMode & themeNumber was added to users
+[33m82c10a0[m HEAD@{877}: commit: bug fixed
+[33m4f304ce[m HEAD@{878}: commit: code refactoring and cleaning
+[33mc1f226b[m HEAD@{879}: commit: upload step file and delete was improved
+[33mdf4b7da[m HEAD@{880}: commit: upload step file was added & removing file from server refactored
+[33m039672e[m HEAD@{881}: commit: bug fixed
+[33m850c5ed[m HEAD@{882}: commit: delete file of steps was implemented
+[33m93f14fb[m HEAD@{883}: commit: Stop the streaming process temporarily
+[33m9fcb0b0[m HEAD@{884}: commit: result add Bot was added to add api res
+[33me95b10a[m HEAD@{885}: commit: bug fixed
+[33m85473f3[m HEAD@{886}: commit: Avoid sending empty data as possible options
+[33m9331dbd[m HEAD@{887}: commit: codes cleaned refactored and documented
+[33m993dc36[m HEAD@{888}: reset: moving to HEAD~
+[33mb13c35a[m HEAD@{889}: commit: codes cleaned refactored and documented
+[33m993dc36[m HEAD@{890}: reset: moving to HEAD~
+[33m12a5d07[m HEAD@{891}: commit: codes cleaned refactored and documented
+[33m993dc36[m HEAD@{892}: commit: Avoid sending empty text as possible options
+[33m2b2f57d[m HEAD@{893}: commit: empty array return if no record in histoty
+[33me9a0253[m HEAD@{894}: commit: validation was added to doBot API
+[33m2636c10[m HEAD@{895}: commit: code cleaned
+[33ma8f91cd[m HEAD@{896}: commit: auth middleware bug fixed
+[33m1eb925b[m HEAD@{897}: commit: my doBot API was added
+[33m85b7afe[m HEAD@{898}: commit: getting user id from user token in soket
+[33m9062866[m HEAD@{899}: commit: auth moddleware was added to soket
+[33mcaf0b0b[m HEAD@{900}: commit: decision type run was improved
+[33m23c50d8[m HEAD@{901}: commit: Save the user's first run in the doBot history
+[33m8468854[m HEAD@{902}: commit: errors management
+[33m0971e19[m HEAD@{903}: commit: continuing a doBot was limited to toDo status
+[33m104f934[m HEAD@{904}: checkout: moving from doBot to main
+[33m25e58df[m[33m ([m[1;32mdoBot[m[33m)[m HEAD@{905}: checkout: moving from main to doBot
+[33m104f934[m HEAD@{906}: commit (merge): Merge branch 'doBot'
+[33m081415c[m HEAD@{907}: checkout: moving from main to main
+[33m081415c[m HEAD@{908}: checkout: moving from doBot to main
+[33m25e58df[m[33m ([m[1;32mdoBot[m[33m)[m HEAD@{909}: checkout: moving from main to doBot
+[33m081415c[m HEAD@{910}: checkout: moving from doBot to main
+[33m25e58df[m[33m ([m[1;32mdoBot[m[33m)[m HEAD@{911}: commit: oldest record removed before adding new history
+[33m1b566fc[m HEAD@{912}: commit: done status was implemented
+[33mc1ddcfa[m HEAD@{913}: commit: test mode property was added to doBot
+[33m32d5c83[m HEAD@{914}: commit: dobot changing status in timing out bot implemented
+[33mddcd4a0[m HEAD@{915}: commit: do bot bug fixed
+[33m2338ade[m HEAD@{916}: commit: scoring was added to doBot step1
+[33m45f8400[m HEAD@{917}: commit: add created time and modified time to steps history
+[33mf2e4425[m HEAD@{918}: commit: saving do bot in decision type
+[33m99739ed[m HEAD@{919}: commit: adding to history was added before answering
+[33m2adb4e5[m HEAD@{920}: commit: file urls was added to history
+[33m9969d6b[m HEAD@{921}: checkout: moving from main to doBot
+[33m081415c[m HEAD@{922}: commit: index free bots api was added
+[33m5054b60[m HEAD@{923}: checkout: moving from doBot to main
+[33m9969d6b[m HEAD@{924}: checkout: moving from main to doBot
+[33m5054b60[m HEAD@{925}: commit: upload file bug fixed
+[33m20bd340[m HEAD@{926}: checkout: moving from doBot to main
+[33m9969d6b[m HEAD@{927}: checkout: moving from main to doBot
+[33m20bd340[m HEAD@{928}: checkout: moving from doBot to main
+[33m9969d6b[m HEAD@{929}: commit: bug fixed
+[33m8d5abdb[m HEAD@{930}: checkout: moving from main to doBot
+[33m20bd340[m HEAD@{931}: commit: add personality to steps bug fixed
+[33mf3cbafc[m HEAD@{932}: commit: my personality bug fixed
+[33mb374baa[m HEAD@{933}: checkout: moving from doBot to main
+[33m8d5abdb[m HEAD@{934}: commit: step type & user answer text was added to history
+[33mf526f1c[m HEAD@{935}: checkout: moving from b374baa0b44938194d56a677728e38ba2cafb75e to doBot
+[33mb374baa[m HEAD@{936}: checkout: moving from main to b374baa0b44938194d56a677728e38ba2cafb75e
+[33mb374baa[m HEAD@{937}: checkout: moving from doBot to main
+[33mf526f1c[m HEAD@{938}: checkout: moving from main to doBot
+[33mb374baa[m HEAD@{939}: checkout: moving from doBot to main
+[33mf526f1c[m HEAD@{940}: checkout: moving from doBot to doBot
+[33mf526f1c[m HEAD@{941}: checkout: moving from main to doBot
+[33mb374baa[m HEAD@{942}: checkout: moving from doBot to main
+[33mf526f1c[m HEAD@{943}: commit: do bot handling was added to run chatBot socket
+[33m2489466[m HEAD@{944}: commit: doBot add and edit methode was implemented step1
+[33m458024d[m HEAD@{945}: commit: dobot scheme was added
+[33m3b4a08a[m HEAD@{946}: checkout: moving from main to doBot
+[33mb374baa[m HEAD@{947}: commit: scoring validation bug fixed
+[33m3b4a08a[m HEAD@{948}: checkout: moving from doBot to main
+[33m3b4a08a[m HEAD@{949}: checkout: moving from main to doBot
+[33m3b4a08a[m HEAD@{950}: checkout: moving from doBot to main
+[33m3b4a08a[m HEAD@{951}: checkout: moving from main to doBot
+[33m3b4a08a[m HEAD@{952}: checkout: moving from doBot to main
+[33m3b4a08a[m HEAD@{953}: checkout: moving from main to doBot
+[33m3b4a08a[m HEAD@{954}: reset: moving to HEAD
+[33m3b4a08a[m HEAD@{955}: reset: moving to HEAD
+[33m3b4a08a[m HEAD@{956}: commit: sso logout step1
+[33m3d5a2aa[m HEAD@{957}: commit: next step after max timr of step
+[33md8aea0e[m HEAD@{958}: commit: code refactored & bug fixed
+[33m39d7d54[m HEAD@{959}: commit: code improved
+[33mc3619fa[m HEAD@{960}: commit: maxBotTimeHandling implementation
+[33m5271ac3[m HEAD@{961}: reset: moving to HEAD~
+[33m8b7a961[m HEAD@{962}: commit: maxBotTimeHandling implementation
+[33m5271ac3[m HEAD@{963}: commit: code refactoring
+[33mb0cfd7a[m HEAD@{964}: commit: bug fixed
+[33m39520bb[m HEAD@{965}: commit: step maxtime handling was inplemented
+[33m8c17576[m HEAD@{966}: commit: get Step Free links implemented
+[33m0ff5a00[m HEAD@{967}: reset: moving to HEAD~
+[33mb2c1737[m HEAD@{968}: commit: get Step Free links implemented
+[33m0ff5a00[m HEAD@{969}: commit: bug fixed
+[33mae31582[m HEAD@{970}: commit: sso login implemented
+[33mc2b3aaf[m HEAD@{971}: commit: add cookie in sso process
+[33m2e8778b[m HEAD@{972}: commit: removed price from bot & convert time of bot to positive number
+[33mb20ba8b[m HEAD@{973}: commit: Added scoring for step
+[33m9a94550[m HEAD@{974}: commit: delay & maxTime converted to en
+[33m490ea21[m HEAD@{975}: commit: Avoid ending with an interactive step
+[33mc8b358e[m HEAD@{976}: commit: bug fixed
+[33m253ea90[m HEAD@{977}: commit: add the condition that parent is not last
+[33mc23d658[m HEAD@{978}: commit: seeder updated
+[33ma5b1fc8[m HEAD@{979}: commit: bug fixed
+[33m2e5afe2[m HEAD@{980}: commit: login fixed
+[33m5b44ddc[m HEAD@{981}: commit: sso login implemented step 1
+[33m908b573[m HEAD@{982}: commit: not found record code changed to 0
+[33m954737c[m HEAD@{983}: commit: All bots are temporarily considered free
+[33m87f00c9[m HEAD@{984}: commit: redis clear cache was added
+[33m3be9653[m HEAD@{985}: commit: code refactored
+[33m1126493[m HEAD@{986}: commit: canHasChilds property was added to step for frontEnd handling
+[33m4b68d48[m HEAD@{987}: commit: Prevented from adding extra nodes
+[33m04bdfe6[m HEAD@{988}: commit: new seeder was implemented
+[33m5a97e08[m HEAD@{989}: commit: edit after of steps was implemented
+[33maa62987[m HEAD@{990}: commit: bug fixed
+[33m9882a03[m HEAD@{991}: commit: auto generate slug in personality add API
+[33m091b0b5[m HEAD@{992}: commit: bug fixed
+[33m834e064[m HEAD@{993}: commit: bug fixed
+[33me23769a[m HEAD@{994}: commit: The login condition was removed from the client view bot method
+[33m0f15d18[m HEAD@{995}: commit: auto generate slug was added to create bot
+[33m88042b8[m HEAD@{996}: commit: type of steps was removed from step codes
+[33m95f2704[m HEAD@{997}: commit: code refactored
+[33md6e90c3[m HEAD@{998}: commit: assignment personality to step was implemented
+[33mbc58d5d[m HEAD@{999}: commit: freeLinks & parentLinks & react flow data structure where added
+[33mfafbf29[m HEAD@{1000}: commit: personality owner check was added
+[33m5512d4b[m HEAD@{1001}: commit: started step id was added to bot info
+[33md917afb[m HEAD@{1002}: commit: add default personality and show it for each users
+[33m99051c3[m HEAD@{1003}: commit: data structure fixed for using in reactFlow lib
+[33m00c64a3[m HEAD@{1004}: commit: upload personality avatar was added
+[33m54864a8[m HEAD@{1005}: commit: delete avatar personality was implemented
+[33mec732a0[m HEAD@{1006}: commit: phone & password converted to english number
+[33m64f3fca[m HEAD@{1007}: commit: possibility of not answering questions was added
+[33m5a637f4[m HEAD@{1008}: commit: add numberkeyBord mode to texAnswerAI
+[33m945a740[m HEAD@{1009}: commit: bug fixed in dup slug bot
+[33mdfe00a6[m HEAD@{1010}: commit: empty array return if records not found
+[33m32c5b29[m HEAD@{1011}: reset: moving to HEAD~
+[33me32e701[m HEAD@{1012}: commit: empty array return if records not found
+[33m32c5b29[m HEAD@{1013}: commit: code improved
+[33m4985d80[m HEAD@{1014}: commit: view personality was added
+[33m74665de[m HEAD@{1015}: commit: bot and step and category seeder was added
+[33ma97a51a[m HEAD@{1016}: commit: default active mode of categories changed to true
+[33m947d0d1[m HEAD@{1017}: commit: code cleaned
+[33m73b169b[m HEAD@{1018}: reset: moving to HEAD~
+[33m61d687f[m HEAD@{1019}: commit: code cleanded
+[33m73b169b[m HEAD@{1020}: commit: edit personality was added
+[33mc166f42[m HEAD@{1021}: reset: moving to HEAD~
+[33ma0048ad[m HEAD@{1022}: commit: edit personality was added
+[33mc166f42[m HEAD@{1023}: commit: my personalites index API was added
+[33m2de2f3a[m HEAD@{1024}: commit: add slug to personality for client side view
+[33md527992[m HEAD@{1025}: commit: bot validtation bug fixed
+[33mc1a8517[m HEAD@{1026}: commit: category edit bug fixed
+[33m10f1372[m HEAD@{1027}: commit: README file updated
+[33mc9dc06a[m HEAD@{1028}: commit: my personality doc was added to swagger
+[33m20d3f98[m HEAD@{1029}: commit: README file was updated
+[33m5cad9d9[m HEAD@{1030}: commit: add method in personality module was iplemented
+[33mb1b757a[m HEAD@{1031}: commit: code documented
+[33md2510ba[m HEAD@{1032}: commit: rempving file if update profile failed
+[33m60cec0c[m HEAD@{1033}: commit: link step socket client implemented
+[33m32c2a4f[m HEAD@{1034}: commit: Link type of steps was implemeted in API side
+[33md018c25[m HEAD@{1035}: commit: validation improved
+[33m12f19b2[m HEAD@{1036}: commit: streaming videos was implemented in add step API
+[33m4e382d9[m HEAD@{1037}: commit: adding fluent-ffmpeg library to streaming videos
+[33mf67dfde[m HEAD@{1038}: commit: upload file type implemented in socket side
+[33mafbc4ec[m HEAD@{1039}: commit: bug fixed
+[33mdc5e842[m HEAD@{1040}: reset: moving to HEAD~
+[33m1c1077b[m HEAD@{1041}: commit: bug fixed
+[33mdc5e842[m HEAD@{1042}: commit: The possibility of specifying the maxTime for some types was removed
+[33m52e0be4[m HEAD@{1043}: commit: new step information war returned in add responce
+[33m0eab2c2[m HEAD@{1044}: commit: A new type was created & conditions were determined for uploading file
+[33mf465ca1[m HEAD@{1045}: commit: code cleaned
+[33m7fe2b91[m HEAD@{1046}: pull: Fast-forward
+[33m57dcee1[m HEAD@{1047}: commit: code documentation
+[33m7cd53ca[m HEAD@{1048}: commit: remove uploaded file if add process failed
+[33m11df6e8[m HEAD@{1049}: commit: uploading text file was implemented
+[33m98e0489[m HEAD@{1050}: commit: uploading audio file was implemented
+[33m52eff32[m HEAD@{1051}: commit: 'return bug in foreach' was fixed
+[33m4c28ac8[m HEAD@{1052}: commit: code cleaned
+[33ma072b98[m HEAD@{1053}: commit: allowed video types & size were added
+[33ma80d4d9[m HEAD@{1054}: commit: code was refactored for uploading videos
+[33m4eb44d6[m HEAD@{1055}: commit: code cleaning
+[33mb28b034[m HEAD@{1056}: commit: allfolders in uploads folder were ignored for git
+[33me132d1a[m HEAD@{1057}: commit: uploader methode was refactored for improving all files uploader
+[33me4487c2[m HEAD@{1058}: commit: checking git
+[33m04896db[m HEAD@{1059}: commit: uploaded picture url improved
+[33ma8875a6[m HEAD@{1060}: commit: images folder was ignored in git
+[33m5d91dba[m HEAD@{1061}: commit: code cleaned
+[33mde48d50[m HEAD@{1062}: commit: allowed images type added to .env file
+[33m7ecf22a[m HEAD@{1063}: commit: code cleaned
+[33m2711582[m HEAD@{1064}: reset: moving to HEAD~
+[33mdf19a52[m HEAD@{1065}: commit: code cleaned
+[33m2711582[m HEAD@{1066}: commit: users upload avatar was updated
+[33m9e8c847[m HEAD@{1067}: commit: schema & swagger were changed for upload image
+[33m55a6ba0[m HEAD@{1068}: commit: upload image for step was added to step/add API
+[33m5f0c2bf[m HEAD@{1069}: commit: uploader image function was implemented
+[33m10de27d[m HEAD@{1070}: commit: make directory function was added
+[33mfb86d85[m HEAD@{1071}: commit: docker container port improved
+[33mb9c784f[m HEAD@{1072}: commit: code imporving
+[33m6a385e0[m HEAD@{1073}: commit: isAuth was distinguished for valid and non-valid refreshTocken
+[33m0ec0f8a[m HEAD@{1074}: commit: code cleaning
+[33m148b4fb[m HEAD@{1075}: commit: "slug" was changed to "نامک" in translating
+[33m229b025[m HEAD@{1076}: commit: none dupstep|dupbot name|slug message was changed to empty
+[33m97847fb[m HEAD@{1077}: commit: swagger was improved for add bots
+[33m9366631[m HEAD@{1078}: commit: dup slug bug fixed
+[33m15b127a[m HEAD@{1079}: commit: code refactoring
+[33mcbada9f[m HEAD@{1080}: commit: Checking the repetition of names and slug bots was added
+[33mb7289cc[m HEAD@{1081}: commit: add adaptation settings for Farsi language
+[33mc30b815[m HEAD@{1082}: reset: moving to HEAD~
+[33m715e6e7[m HEAD@{1083}: commit: add
+[33mc30b815[m HEAD@{1084}: commit: step validation was completed for dup step
+[33m232194c[m HEAD@{1085}: commit: dup-step routing was added
+[33m31816b5[m HEAD@{1086}: commit: code cleaning
+[33m5271b18[m HEAD@{1087}: commit: some private methods are converted to public to use
+[33md6423a7[m HEAD@{1088}: commit: Added checking for duplicate step names
+[33m37c09c0[m HEAD@{1089}: commit: code cleaning
+[33ma7b3f76[m HEAD@{1090}: commit: testing push
+[33md7d2a55[m HEAD@{1091}: commit: bug fixed
+[33md891882[m HEAD@{1092}: commit: adding delay bug fixed
+[33m9d4dde9[m HEAD@{1093}: commit: Securing array elements
+[33ma28b58f[m HEAD@{1094}: commit: sokcet process redesigne completed
+[33m41831f9[m HEAD@{1095}: commit: afters & limkes & correctAnswers were redesigned based on array indexing
+[33m13eb1d6[m HEAD@{1096}: commit: info log was added to all apis
+[33mef04357[m HEAD@{1097}: commit: gitignore file updated
+[33mca9f632[m HEAD@{1098}: commit: duplicated log bug fixed
+[33mcef0bb1[m HEAD@{1099}: commit: yarn installing process in server bug fixed
+[33m5ddacc6[m HEAD@{1100}: commit: Course restrictions were temporarily lifted
+[33mbd698e9[m HEAD@{1101}: commit: global adding concurrently
+[33m6344142[m HEAD@{1102}: commit: log level changet to high
+[33mc1a823a[m HEAD@{1103}: commit: installing concurrently was added to docker file
+[33m5e241d7[m HEAD@{1104}: commit: code cleaned
+[33me4f5e3e[m HEAD@{1105}: commit: code cleaned
+[33m6540563[m HEAD@{1106}: commit: input validation wase improved in add step
+[33m45f6efd[m HEAD@{1107}: commit: step validation was completed for single & multiple types
+[33m62190fc[m HEAD@{1108}: commit: Leveling of logs is complete
+[33m03c512d[m HEAD@{1109}: commit: Leveling was defined for recording logs
+[33m0b3597b[m HEAD@{1110}: commit: user.log file was added
+[33mb54d157[m HEAD@{1111}: commit: bug fixed in jalali package instalation and method
+[33m5f3b1b6[m HEAD@{1112}: commit: code cleaned
+[33m96d6246[m HEAD@{1113}: commit: logging process was added by installing
+[33m9639d5b[m HEAD@{1114}: commit: bug filxed
+[33m8b58ada[m HEAD@{1115}: commit: single & multiple choice type socket implemented
+[33m16c0101[m HEAD@{1116}: commit: single or multiple choice type errors were prevented
+[33md82f2f9[m HEAD@{1117}: commit: bug fixed
+[33m78d1865[m HEAD@{1118}: commit: set multiple correct answers for singleChoice type was improved
+[33m139aa23[m HEAD@{1119}: commit: code cleaning
+[33m8782e30[m HEAD@{1120}: commit: code cleaning & add equality of two arrays function
+[33mdec48bd[m HEAD@{1121}: commit: caching bot data to redis was added to improving performance
+[33maf705f6[m HEAD@{1122}: commit: runChatBot & get nextStep were added to socket.io module
+[33m462b497[m HEAD@{1123}: commit: swagger improved for after imput
+[33md8dff5c[m HEAD@{1124}: commit: code cleanded and improved
+[33m5e6d22b[m HEAD@{1125}: commit: links and after strategy was aded to steps
+[33m5c90ac1[m HEAD@{1126}: commit: some custom settings were
+[33me4067fa[m HEAD@{1127}: commit: some new params in env
+[33m7dad18c[m HEAD@{1128}: commit: nginx was added to cors handling but no need to use!
+[33mc278b6d[m HEAD@{1129}: commit: delay was added to swaggwer
+[33m5d52c62[m HEAD@{1130}: commit: code cleaning
+[33meef1025[m HEAD@{1131}: commit: adding automatically Message node for each options on Decision
+[33m6d0a71c[m HEAD@{1132}: commit: io was added to userControlle client
+[33me97b1d8[m HEAD@{1133}: commit: new step deleted if updating numOfSteps was failed
+[33mb768e9f[m HEAD@{1134}: commit: documentation methods & code cleaning & code improving
+[33m3766dd8[m HEAD@{1135}: commit: endpoint list updated
+[33m0329ec4[m HEAD@{1136}: commit: code improved
+[33mec07637[m HEAD@{1137}: commit: view bot was implemented based on id or slug
+[33mff09ee1[m HEAD@{1138}: commit: end poin lis documentation updated
+[33m8fc72d3[m HEAD@{1139}: commit: code cleaned
+[33m28f9448[m HEAD@{1140}: commit: any records dos not exist message was added to index bot and myBot
+[33m75542a1[m HEAD@{1141}: commit: code cleaning
+[33m1b264c2[m HEAD@{1142}: commit: delete step was improved
+[33md9102fe[m HEAD@{1143}: commit: code cleaned
+[33m3693661[m HEAD@{1144}: commit: checking owner step was added to indexing steps
+[33m9c6b980[m HEAD@{1145}: commit: checking step owner was added to view step methode
+[33m13444c4[m HEAD@{1146}: commit: code refactored
+[33m9a25203[m HEAD@{1147}: commit: bug fixed
+[33mbc54cfb[m HEAD@{1148}: commit: steps data structure was unified in tree and non-tree structure indexing
+[33m05e421e[m HEAD@{1149}: commit: owner bot checking was added to add step from result view bot calling
+[33m2f9b655[m HEAD@{1150}: commit: code cleaned
+[33m939e5ba[m HEAD@{1151}: commit: code refactored
+[33ma2b2f2c[m HEAD@{1152}: commit: owner bot checking was added to edit & delete bot
+[33mbe66951[m HEAD@{1153}: commit: not found message was added to view step
+[33m32c18d1[m HEAD@{1154}: commit: Prevented from adding non-bot related parent step
+[33mc4a84a5[m HEAD@{1155}: commit: Non-tree display mode was added to index steps
+[33maf48e66[m HEAD@{1156}: commit: view step was improved
+[33m3689b9d[m HEAD@{1157}: commit: text of starting step was changed to "start"
+[33mfbe6087[m HEAD@{1158}: commit: indexing steps of bot was added
+[33mbcea61d[m HEAD@{1159}: commit: endpotin list was updated
+[33m7b2f557[m HEAD@{1160}: commit: code improved
+[33m8a64d1b[m HEAD@{1161}: commit: view step and its childrens was added
+[33m6444ea5[m HEAD@{1162}: commit: error translate was added
+[33m0160177[m HEAD@{1163}: commit: code cleanging
+[33mcb9fbd8[m HEAD@{1164}: commit: code refactoring
+[33m20411cb[m HEAD@{1165}: commit: asign unique code to steps was improved
+[33m0e8360b[m HEAD@{1166}: checkout: moving from main to main
+[33m0e8360b[m HEAD@{1167}: commit: updating of numOfState in bot implemented
+[33mf362142[m HEAD@{1168}: commit: The process of counting steps was implemented
+[33mb09343e[m HEAD@{1169}: commit: type of counter in step schema was changed to string
+[33m71aec0c[m HEAD@{1170}: commit: bot translate file was imported
+[33m792f4da[m HEAD@{1171}: commit: parent step id must be required
+[33m0ec1d2a[m HEAD@{1172}: commit: endPoint list document was updated
+[33m513098f[m HEAD@{1173}: commit: errors were improved
+[33m6d4fe04[m HEAD@{1174}: commit: bug fixed & code refactored
+[33m8217ab1[m HEAD@{1175}: commit: create step was added
+[33me17da45[m HEAD@{1176}: commit: checking for presence of bot was added
+[33m54c0f98[m HEAD@{1177}: commit: sending data to model was improved
+[33mfe0cf03[m HEAD@{1178}: commit: apply condition on the seeder execution
+[33mda00734[m HEAD@{1179}: commit: delete bot was implemented
+[33m98a101a[m HEAD@{1180}: commit: my bot was implemented
+[33m44b1185[m HEAD@{1181}: commit: endPoint list was added as documentation
+[33m5374f3f[m HEAD@{1182}: commit: swagger user module client & admin were separated
+[33m39bc72c[m HEAD@{1183}: commit: code cleaning
+[33mc0dea63[m HEAD@{1184}: commit: code cleaning
+[33mb9fe6e1[m HEAD@{1185}: commit: admin side index bot impemented
+[33m3985660[m HEAD@{1186}: commit: createdById & inactive initial state were added to bot add method
+[33m5d7c6ef[m HEAD@{1187}: commit: Unnecessary roots were removed from client side routes
+[33mfb2f869[m HEAD@{1188}: commit: bug fixed in calling admin controller
+[33m08ebd53[m HEAD@{1189}: commit: bug fixed in removing root record
+[33mba293a7[m HEAD@{1190}: commit: createdById was added to category add
+[33m1ee00b4[m HEAD@{1191}: commit: active field was removed from add bot
+[33mae316bf[m HEAD@{1192}: commit: category index client no need to aut and only active cats can be showen
+[33me1a0e70[m HEAD@{1193}: commit: authentication was added to admin side category index
+[33medc557f[m HEAD@{1194}: commit: checking slug removed from bot and category validation
+[33m27526f9[m HEAD@{1195}: commit: dockerFile was cleaned
+[33mab0adcc[m HEAD@{1196}: commit: seeder was added to docker process
+[33m30853bf[m HEAD@{1197}: commit: bug fixed
+[33m25e28e0[m HEAD@{1198}: commit: generateSlug function was added
+[33m9ae892a[m HEAD@{1199}: commit: soclet.io library was added
+[33ma7d1db6[m HEAD@{1200}: commit: Admin and user modules were separated
+[33m64c3838[m HEAD@{1201}: commit: bot and step schemas were refactored
+[33mafec8f0[m HEAD@{1202}: commit: globally gitignore file was added to project
+[33meb2f5c2[m HEAD@{1203}: commit: env file was added
+[33m5d11231[m HEAD@{1204}: Branch: renamed refs/heads/master to refs/heads/main
+[33m5d11231[m HEAD@{1206}: commit: step was implemented
+[33m773f7e3[m HEAD@{1207}: commit: bot module was implemented
+[33m1adb68d[m HEAD@{1208}: commit: seeder was added
+[33m1d539d1[m HEAD@{1209}: commit: category module was implemented
+[33mec81d9b[m HEAD@{1210}: commit: user module & authentication was implemented
+[33m631ea5d[m HEAD@{1211}: commit: role module was implemented
+[33mb25f9de[m HEAD@{1212}: commit: base conrtoller was implemented
+[33mbbc68c5[m HEAD@{1213}: commit: poject was dockerized
+[33ma970a9f[m HEAD@{1214}: commit (initial): application core was initialized

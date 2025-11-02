@@ -1,0 +1,103 @@
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: app
+    restart: always
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./app/.env # مسیر صحیح فایل .env
+    depends_on:
+      - mongo
+      - mongo2
+      - mongo3
+    volumes:
+      - "./app:/app"
+      - "./volumes/uploads:/app/uploads"
+      - "./volumes/app-logs:/app/app-logs"
+    networks:
+      - app
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    env_file:
+      - ./app/.env  
+    volumes:
+      - ./volumes/mongo_db:/data/db
+      - ./mongo-keyfile:/data/mongo-keyfile
+    entrypoint:
+      - bash
+      - -c
+      - |
+          chmod 400 /data/mongo-keyfile
+          chown 999:999 /data/mongo-keyfile
+          exec docker-entrypoint.sh $$@
+    command: ["mongod", "--replSet", "rs0", "--keyFile", "/data/mongo-keyfile"]
+    networks:
+      - app    
+  mongo2:
+    image: mongo
+    container_name: mongo2
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    ports:
+      - 27018:27017
+    volumes:
+      - ./volumes/mongo2_db:/data/db
+      - ./mongo-keyfile:/data/mongo-keyfile
+    entrypoint:
+      - bash
+      - -c
+      - |
+          chmod 400 /data/mongo-keyfile
+          chown 999:999 /data/mongo-keyfile
+          exec docker-entrypoint.sh $$@
+    command: ["mongod", "--replSet", "rs0", "--keyFile", "/data/mongo-keyfile"]
+    depends_on:
+      - mongo    
+    networks:
+      - app    
+  mongo3:
+    image: mongo
+    container_name: mongo3
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    ports:
+      - 27019:27017
+    volumes:
+      - ./volumes/mongo3_db:/data/db
+      - ./mongo-keyfile:/data/mongo-keyfile
+    entrypoint:
+      - bash
+      - -c
+      - |
+          chmod 400 /data/mongo-keyfile
+          chown 999:999 /data/mongo-keyfile
+          exec docker-entrypoint.sh $$@
+    command: ["mongod", "--replSet", "rs0", "--keyFile", "/data/mongo-keyfile"]
+    depends_on:
+      - mongo    
+    networks:
+      - app   
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - ./volumes/redis_db:/data
+    networks:
+      - app
+networks:
+  app:
+    driver: bridge

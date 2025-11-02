@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+.yarn/
+.yarn-error.log
+.yarnrc
+
+# Logs
+app/app-logs/
+*.log
+
+# Environment files
+app/.env
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Docker volumes and temporary files
+volumes/
+
+# Ignore IDE/Editor files
+*.idea/
+*.vscode/
+
+# Ignore build files
+dist/
+build/
+
+# Mongo Keyfile
+mongo-keyfile
