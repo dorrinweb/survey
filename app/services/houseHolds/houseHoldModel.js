@@ -93,6 +93,28 @@ async index(){
     }
 }
 
+async updateMembers(householdId, userIds, session){
+    try{
+        // Update the household's members and membersCount using the session
+        const updatedHousehold = await this.findByIdAndUpdate(
+            householdId,
+            {
+                $addToSet: { members: { $each: userIds } }, // Add user IDs to 'members' array (prevent duplicates)
+                // $set: { membersCount: userIds.length }, // Update the members count
+            },
+            { new: true, session } // Use the session for transaction
+        );
+
+        // Return the updated household
+        return updatedHousehold;
+
+    }catch (e) {
+        log(e); // Log the error for debugging
+        return -2;
+
+    }
+}
+
 }
 
 

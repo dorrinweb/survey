@@ -6,10 +6,12 @@ import { getEnv, log, random, toObjectId } from '../../core/utils.js';
 import datetime from '../../core/datetime.js';
 import crypto from '../../core/crypto.js';
 import RoleModel from '../roles/roleModel.js'
+import HouseHoldModel from '../houseHolds/houseHoldModel.js';
 
 export default class UserModel {
     constructor() {
         this.model = MongoDB.db.model('user', UserSchema);
+        // this.houseHoldModel = new HouseHoldModel()
 
     }
     async add(data/*,firstName,lastName,phone,roleId,nationalId*/) {
@@ -180,6 +182,39 @@ async checkRole(roleId){
     }
 }
 
+// async addUsersToHousehold(householdId, users){
+//     const session = await this.model.startSession();
+//     session.startTransaction();
+//     try {
+//         // Prepare bulk operations for inserting users
+//         const bulkOperations = users.map((user) => ({
+//             insertOne: {
+//                 document: {
+//                     ...user, // Spread the user object (education, birthYear, etc.)
+//                     householdId, // Add householdId to the user
+//                 },
+//             },
+//         }));
+//         // Perform bulk insert
+//         const bulkWriteResult = await this.bulkWrite(bulkOperations, { session });
+
+//         // Extract inserted user IDs
+//         const insertedUserIds = bulkWriteResult.insertedIds.map((id) => id._id);
+//         const resultUpdateHouseHold = await this.houseHoldModel.updateMembers(householdId, insertedUserIds, session)
+//         // Commit the transaction
+//         await session.commitTransaction();
+//         session.endSession();
+//         return resultUpdateHouseHold
+
+ 
+//     } catch (e) {
+//         // Rollback transaction in case of error
+//         await session.abortTransaction();
+//         session.endSession();
+//         log(e); // Log the error for debugging
+//         return -2;
+
+//         }
+// }
+
 }
-
-

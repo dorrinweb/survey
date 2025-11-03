@@ -22,7 +22,7 @@ const HouseholdSchema = new Schema(
                 default: 0
             },
 
-            parkingCarCount: {
+            parkingSpacesCount: {
                 type: Number, // Number of cars parked in the household's parking space
                 default: 0
             },

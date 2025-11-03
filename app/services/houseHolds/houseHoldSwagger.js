@@ -40,9 +40,9 @@ export default {
           "type": "number"
         },  
         {
-          "name": "parkingCarCount",
+          "name": "parkingSpacesCount",
           "in": "formData",
-          "description": "parkingCarCount of Household",
+          "description": "parkingSpacesCount of Household",
           "required": true,
           "type": "number"
         },     

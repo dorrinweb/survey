@@ -24,7 +24,7 @@ const carSchema = new Schema(
             carName: {
                 type: String, // Name of the car
             },
-            carAge: {
+            carYear: {
                 type: Number, // Age of the car model
             },
             fuelType: {

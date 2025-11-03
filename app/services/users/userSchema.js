@@ -8,12 +8,6 @@ const UserSchema = new Schema(
                 type: Number,
                 required: true, 
             },
-            fullName: {
-                type: String,
-            },
-            description: {
-                type: String,
-            },
             phone: {
                 type: Number,
             },
@@ -29,10 +23,6 @@ const UserSchema = new Schema(
                 type: Boolean, // Whether the user is the head of the household (the one who fills general household info)
                 default: false
             },
-            address: {
-                type: String,
-            },
-           
             education: {
                 type: String, // User's education level
                 enum: ['بی‌سواد', 'ابتدایی', 'سیکل', 'دیپلم', 'فوق دیپلم', 'لیسانس', 'فوق لیسانس', 'دکترا'], // Only specified options are allowed
@@ -64,7 +54,7 @@ const UserSchema = new Schema(
                     'null'
                 ], // Only specified options are allowed
             },
-            monthlyIncome: {
+            income: {
                 type: String, // Average monthly income in million Toman
                 enum: [
                     '0-3',
@@ -74,7 +64,7 @@ const UserSchema = new Schema(
                     'up 15'
                 ], // Only specified options are allowed
             },
-            monthlyExpenses: {
+            expenses: {
                 type: String, // Average monthly expenses in million Toman
                 enum: [
                     '0-3',

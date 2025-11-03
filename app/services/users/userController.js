@@ -31,35 +31,39 @@ export default class UserController extends BaseController {
      * @param {*} res 
      * @returns 
      */
-       async register(req, res) {
+       async addUsersToHousehold(req, res) {
         try {
 
-            const validationErrors = await userValidation.register(req);
-            if (!validationErrors.isEmpty()) {
-                const errorMessage = validationErrors?.errors[0].msg;
-                return res.status(203).json(errorMessage)
-            }
+            // const validationErrors = await userValidation.addUsersToHousehold(req);
+            // if (!validationErrors.isEmpty()) {
+            //     const errorMessage = validationErrors?.errors[0].msg;
+            //     return res.status(203).json(errorMessage)
+            // }
             
-            const phone = this.toNumber(this.input(req.body.phone));
-            const userData = {
-                'phone' : phone
+            // const phone = this.toNumber(this.input(req.body.phone));
+            // const userData = {
+            //     'phone' : phone
+            // }
+            const { householdId, users } = req.body;
+            if (!householdId || !users || !Array.isArray(users) || users.length === 0) {
+                return res.status(400).json({ status: -1, message: "Invalid inputs. Please provide a householdId and an array of users." });
             }
-            const resultRegisterUser = await this.model.register(userData);
+            const resultAddUsersToHousehold = await this.model.addUsersToHousehold(householdId, users);
             
-            if (typeof resultRegisterUser === 'number') {
-                switch (resultRegisterUser) {
-                    case -1:
-                        return res.status(406).json({ "code": 7, "msg": translate.t('user.duplicate_phone'), 'isAuth': 0 });
+            if (typeof resultAddUsersToHousehold === 'number') {
+                switch (resultAddUsersToHousehold) {
+                    case -2:
+                        return res.status(500).json({ "code": 2, "msg": translate.t('user.An error occurred while adding users to the household.'), 'isAuth': 0 });
                         break;
                 }
             }
             else {
-                if (resultRegisterUser?._id) {
-                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_register'),"data": resultRegisterUser,'isAuth': 0 });
-                }
-                else {
-                    return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
-                }
+                // if (resultAddUsersToHousehold?._id) {
+                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_register'),"data": resultAddUsersToHousehold,'isAuth': 0 });
+                // }
+                // else {
+                //     return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
+                // }
             }
 
         } catch (e) {
@@ -93,6 +97,8 @@ export default class UserController extends BaseController {
 
     async getPassword(req, res) {
         try {
+            log('ddddddd')
+
             const phone = this.toNumber(convertToEnglishNumber(this.input(req.body.phone)));
             req.body.phone = phone;
             const validationErrors = await userValidation.getPassword(req, res);

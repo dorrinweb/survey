@@ -32,7 +32,7 @@ export default class HouseHoldController extends BaseController {
             const address = this.safeString(req.body?.address);
             const monthlyIncome = this.safeString(req.body?.monthlyIncome);
             const monthlyExpenses = this.safeString(req.body?.monthlyExpenses);
-            const parkingCarCount = this.toNumber(req.body?.parkingCarCount);
+            const parkingSpacesCount = this.toNumber(req.body?.parkingSpacesCount);
             const carCount = this.toNumber(req.body?.carCount);
             const householdCount = this.toNumber(req.body?.householdCount);
             const hasParking = req.body?.hasParking;
@@ -45,7 +45,7 @@ export default class HouseHoldController extends BaseController {
                 monthlyIncome: monthlyIncome || null,
                 monthlyExpenses: monthlyExpenses || null,
                 hasParking: hasParking || false,
-                parkingCarCount: parkingCarCount || null,
+                parkingSpacesCount: parkingSpacesCount || null,
                 members: [requesterId] // Add the current user as the first member
             };
     
