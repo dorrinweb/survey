@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apk --no-cache add ffmpeg \
 && yarn global add nodemon concurrently
 
-COPY package.json yarn.lock ./
+COPY package.json  ./
 
 RUN yarn install
 
