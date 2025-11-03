@@ -97,6 +97,23 @@ services:
       - ./volumes/redis_db:/data
     networks:
       - app
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    ports:
+    - "8081:8081"
+    environment:
+      ME_CONFIG_SITE_PORT: 8081
+      ME_CONFIG_MONGODB_URL: mongodb://root:pass@mongo:27017,mongo2:27017,mongo3:27017/?replicaSet=rs0
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: pass
+      ME_CONFIG_MONGODB_SERVER: mongo,mongo2,mongo3
+    depends_on:
+      - mongo
+    networks:
+      - app
+    command: ["sh", "-c", "sleep 10 && npm start"]
 networks:
   app:
     driver: bridge
