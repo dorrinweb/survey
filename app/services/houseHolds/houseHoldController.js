@@ -24,9 +24,11 @@ export default class HouseHoldController extends BaseController {
     }
 
     async add(req, res) {
+        
         // const session = await mongoose.startSession(); // شروع یک session برای تراکنش
         // session.startTransaction(); // شروع تراکنش
         try {
+            
             const requesterId = this.safeString(this.input(req?.userToken?.userId));            
             // if (this.toObjectId(requesterId) === '') {
             //     return res.status(203).json({ "code": 2, "msg": translate.t('id_is_invalid'), 'isAuth': 0 });
@@ -47,7 +49,10 @@ export default class HouseHoldController extends BaseController {
                 switch (resultAdd) {
                     case -1 :
                         return res.status(500).json({ "code": -1, "msg":  translate.t('An error occurred while adding  household'), 'isAuth': 0 });
-                }
+                    case -2 :
+                        return res.status(500).json({ "code": -2, "msg":  translate.t('An error occurred while adding users to the household'), 'isAuth': 0 });
+                       
+                    }
             }
 
             // // 2. ذخیره‌سازی کاربران
@@ -56,12 +61,14 @@ export default class HouseHoldController extends BaseController {
             if (typeof resultAddUsers == 'number') {
                 switch (resultAddUsers) {
                     case -1 :
+                        return res.status(500).json({ "code": -1, "msg":  translate.t('An error occurred while adding users to the household'), 'isAuth': 0 });
+                    case -2 :
                         return res.status(500).json({ "code": -2, "msg":  translate.t('An error occurred while adding users to the household'), 'isAuth': 0 });
-                }
+                    
+                    }
             }
-                
+               
             if(resultAddUsers?.insertedCount > 0 || resultAddUsers?.matchedCount > 0 ){
-
                 return res.status(201).json({ "code": 0, "msg": translate.t('successfuly_add'), "data": resultAdd, 'isAuth': 0 });
 
             }

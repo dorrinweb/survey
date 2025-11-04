@@ -16,31 +16,34 @@ export default class HouseHoldModel {
     }
 
 
-async add(householdData, userId) {
+    async add(householdData, userId) {
         const session = await this.model.startSession();
         session.startTransaction();
         try {
-            //Step 0 :checking user has any househodes
-            const userHousehold =  await this.model.findOne({'createdById' : userId});
+            // Step 0: Checking if the user has any households
+            const userHousehold = await this.model.findOne({ 'createdById': userId });
             if (userHousehold?._id) 
-                return userHousehold
-            
+                return userHousehold;
+    
             // Step 1: Get the last householdCode
-            let newHouseholdCode = 10001; // Default starting value for householdCode
+            const lastHousehold = await this.model.findOne({}, 'householdCode').sort({ householdCode: -1 }); // جستجوی آخرین householdCode
+            const newHouseholdCode = lastHousehold ? lastHousehold.householdCode + 1 : 10001; // افزایش 1 یا استفاده از 10001
+    
             // Step 2: Add householdCode and create household
             householdData.householdCode = newHouseholdCode;
             householdData.createdAt = datetime.toJalaali();
             householdData.createdById = userId;
-            const row = new this.model(householdData);
-            const newHousehold = await row.save(/*{ session }*/);
-
+            const newHousehold = new this.model(householdData);
+            await newHousehold.save(); // می‌توانید session را در اینجا فعال کنید
+    
             // Step 3: Update user's householdId
-            const resultUpdateUser = await this.userModel.updateHouseholdId(userId,newHousehold?.id/*,session*/);
+            const resultUpdateUser = await this.userModel.updateHouseholdId(userId, newHousehold._id); // استفاده از _id به جای id
             if (!resultUpdateUser?._id) {
                 await session.abortTransaction();
                 session.endSession();
                 return -1;   
             }
+    
             // Commit transaction
             await session.commitTransaction();
             session.endSession();
@@ -51,10 +54,8 @@ async add(householdData, userId) {
             session.endSession();
             log(e); // Log the error for debugging
             return -2;
-   
-            }
+        }
     }
-
 
 
 

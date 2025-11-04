@@ -1,17 +1,38 @@
 import { Schema } from 'mongoose';
 import withBaseSchema from "../../core/baseSchema.js";
 
-
 // A plugin to automatically set getters
 function applyGetters(schema) {
     schema.set('toObject', { getters: true, virtuals: true });
     schema.set('toJSON', { getters: true, virtuals: true });
 }
 
+const CarSchema = new Schema({
+    owner: {
+        type: Schema.Types.ObjectId, // Refers to the user who owns the car
+        ref: "user",
+        required: true
+    },
+    carType: {
+        type: String, // Type of the car
+        enum: ['سواری', 'وانت', 'کامیون', 'موتور سیکلت', 'اتوبوس', 'مینی‌بوس', 'تراکتور', 'کامیونت', 'سایر'], // Only specified car types are allowed
+    },
+    carName: {
+        type: String, // Name of the car
+    },
+    carYear: {
+        type: Number, // Age of the car model
+    },
+    fuelType: {
+        type: String, // Type of fuel used in the car
+        enum: ['بنزینی', 'گازوئیلی', 'برقی', 'گازسوز', 'هیبریدی'], // Only specified fuel types are allowed
+    },
+});
+
 const UserSchema = new Schema(
     withBaseSchema(
         {
-            userCode:{
+            userCode: {
                 type: Number,
                 required: true, 
             },
@@ -40,7 +61,6 @@ const UserSchema = new Schema(
             gender: {
                 type: String, // User's gender
                 enum: ['زن', 'مرد'], // Only specified options are allowed
-
             },
             job: {
                 type: String, // User's occupation
@@ -87,12 +107,10 @@ const UserSchema = new Schema(
             hasCarOwnership: {
                 type: Boolean, // Whether the user owns a car
             },
-            cars: [
-                {
-                    type: Schema.Types.ObjectId, // List of cars owned by the user
-                    ref: "car"
-                }
-            ],
+            carDetails: {
+                type: [CarSchema], // List of cars owned by the user
+                default: [] // Default to an empty array
+            },
             workStartHour: {
                 hour: {
                     type: Number,
@@ -108,10 +126,10 @@ const UserSchema = new Schema(
             relationWithHouseHold: {
                 type: String, 
             },
-
         }
     )
 );
- // Add plugin to enable getters by default
- UserSchema.plugin(applyGetters);
+
+// Add plugin to enable getters by default
+UserSchema.plugin(applyGetters);
 export default UserSchema;

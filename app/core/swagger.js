@@ -3,7 +3,6 @@ import {getEnv, log} from '../core/utils.js';
 import swaggerJsdoc from 'swagger-jsdoc';
 
 import user from '../services/users/userSwagger.js';
-import Car from '../services/cars/carSwagger.js';
 import HouseHold from '../services/houseHolds/houseHoldSwagger.js';
 
 
@@ -26,7 +25,6 @@ const options = {
       paths : {
         ...HouseHold,
         ...user,
-        ...Car,
       }
     }
 };
