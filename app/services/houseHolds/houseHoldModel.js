@@ -58,8 +58,46 @@ export default class HouseHoldModel {
     }
 
 
-
-
+    async view(requesterId) {
+        try {
+            // Query household based on requesterId
+            let query = { 'createdById': requesterId };
+    
+            // Find the household created by the requester
+            let currentHousehold = await this.model.findOne(query)
+                .populate({
+                    path: 'createdById',
+                    select: ['firstName', 'lastName']
+                });
+    
+            // Check if household was found
+            if (!currentHousehold?._id) {
+                return -1; // Household not found
+            }
+    
+            // Use the findUsersOfHousehold method to get household members
+            const householdMembers = await this.userModel.findUsersOfHousehold(currentHousehold._id);
+    
+            // Add individuals key to currentHousehold
+            currentHousehold.individuals = householdMembers;
+    
+            // Format the output for household data
+            const householdData = {
+                address: currentHousehold.address,
+                householdCount: currentHousehold.householdCount,
+                carCount: currentHousehold.carCount,
+                parkingSpacesCount: currentHousehold.parkingSpacesCount
+            };
+    
+            // Return the formatted output
+            return {
+                householdData,
+                individuals: currentHousehold.individuals // Return the individuals array
+            };
+        } catch (e) {
+            return e.toString(); // Return the error as a string
+        }
+    }
     async checkPhone(phone) {
         return this.model.findOne({ 'phone': phone }).countDocuments();
     }

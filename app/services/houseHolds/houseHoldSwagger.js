@@ -1,5 +1,6 @@
 export default {
 
+
   "/household/add": {
       "post": {
         "tags": [
@@ -148,7 +149,34 @@ export default {
       }
   },
 
-      
+  "/household/my-household": {
+    "post": {
+      "tags": [
+        "Household"
+      ],
+      "summary": "My Household ",
+      "description": "Information Of My Household",
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [
+        {
+          "name": "x-token",
+          "in": "header",
+          "description": "userId, requester userId (This field is temporary and will be changed to user tocken after implementing user authentication and tokenization.)",
+          "required": true,
+          "type": "string"
+        }, 
+        
+      ],
+      "responses": {
+        "200": {
+          "description": "successful",
+        },
+      },
+    },
+  }, 
+  
   "/household/index": {
         "get": {
           "tags": [

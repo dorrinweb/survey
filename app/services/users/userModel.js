@@ -212,6 +212,16 @@ async usersBulkWrite(householdId, users) {
     }
 }
 
+async findUsersOfHousehold(householdId){
+    try {
+        const users = await this.model.find({ householdId: householdId })
+        return users;
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while featching users "
+    }
+}
+
 // 
 
 }

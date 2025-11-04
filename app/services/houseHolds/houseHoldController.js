@@ -86,6 +86,38 @@ export default class HouseHoldController extends BaseController {
         }
     }
 
+   /**
+* 
+* @param {userId,titlesortType,sortField} req 
+* @param {*} res 
+* @returns 
+*/
+async view(req, res) {
+    try {
+        const requesterId = this.safeString(this.input(req?.userToken?.userId));            
+        // if (this.toObjectId(requesterId) === '')
+    // return res.status(203).json({ "code": 2, "msg": translate.t('id_is_invalid'), 'isAuth': 0 });
+    log(requesterId)
+    const resultView = await this.model.view(requesterId);
+    if( typeof resultView === 'number' ){
+        switch(resultView){
+            case -1 :
+                return res.json({"code" : -1 ,"msg" : translate.t('rows_not_found'),'isAuth' : 0});
+            break;
+            case -2 :
+                return res.json({"code" : -1 ,"msg" : translate.t('household.requester_is_not_owner_household'),'isAuth' : 0});
+            break;
+        }
+    }
+    const data = {
+        "household" : resultView,
+    }
+    return res.json({'code' : 0 ,'data' : data , 'isAuth' : 0});
+}catch(e){
+    super.toError(e,req,res);
+}
+}
+
     async index(req, res) {
         try {
             const resultHouseHoldList = await this.model.index();            
