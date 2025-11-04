@@ -57,7 +57,7 @@ export default class RoleModel {
     }
 
     async view(roleId) {
-        roleId = toObjectId(roleId);
+        // roleId = toObjectId(roleId);
         if (roleId) {
             return await this.model.findOne({ '_id': roleId })
         } else {

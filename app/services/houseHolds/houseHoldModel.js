@@ -16,29 +16,26 @@ export default class HouseHoldModel {
     }
 
 
-    async add(householdData, userId) {
+async add(householdData, userId) {
         const session = await this.model.startSession();
         session.startTransaction();
         try {
             //Step 0 :checking user has any househodes
-            const userHousehold =  await this.model.findOne({'houseHoldeId' : userId}).countDocuments();
-            if(userHousehold > 0)
-                log(userHousehold)
+            const userHousehold =  await this.model.findOne({'createdById' : userId});
+            if (userHousehold?._id) 
+                return userHousehold
+            
             // Step 1: Get the last householdCode
-            const lastHousehold = await this.model.findOne().sort({ householdCode: -1 }).exec();
             let newHouseholdCode = 10001; // Default starting value for householdCode
-    
-            if (lastHousehold) {
-                newHouseholdCode = lastHousehold.householdCode + 1; // Increment last householdCode
-                return -4
-            }
             // Step 2: Add householdCode and create household
             householdData.householdCode = newHouseholdCode;
             householdData.createdAt = datetime.toJalaali();
+            householdData.createdById = userId;
             const row = new this.model(householdData);
-            const newHousehold = await row.save({ session });
+            const newHousehold = await row.save(/*{ session }*/);
+
             // Step 3: Update user's householdId
-            const resultUpdateUser = await this.userModel.updateHouseholdId(userId,newHousehold?._id,session);
+            const resultUpdateUser = await this.userModel.updateHouseholdId(userId,newHousehold?.id/*,session*/);
             if (!resultUpdateUser?._id) {
                 await session.abortTransaction();
                 session.endSession();
@@ -55,8 +52,13 @@ export default class HouseHoldModel {
             log(e); // Log the error for debugging
             return -2;
    
-                       }
+            }
     }
+
+
+
+
+
     async checkPhone(phone) {
         return this.model.findOne({ 'phone': phone }).countDocuments();
     }
@@ -114,6 +116,35 @@ async updateMembers(householdId, userIds, session){
 
     }
 }
+
+
+
+async addUsersToHousehold(householdId, users){
+    //     const session = await this.model.startSession();
+    //     session.startTransaction();
+        try {
+    //         // Prepare bulk operations for inserting users
+            const usersBulkWriteResult = await this.userModel.usersBulkWrite(householdId,users/*, { session }*/);
+    
+    //         // Extract inserted user IDs
+    //         const insertedUserIds = bulkWriteResult.insertedIds.map((id) => id._id);
+    //         const resultUpdateHouseHold = await this.houseHoldModel.updateMembers(householdId, insertedUserIds, session)
+    //         // Commit the transaction
+    //         await session.commitTransaction();
+    //         session.endSession();
+            return usersBulkWriteResult
+    
+     
+        } catch (e) {
+    //         // Rollback transaction in case of error
+    //         await session.abortTransaction();
+    //         session.endSession();
+            log(e); // Log the error for debugging
+            return -2;
+    
+            }
+    }
+
 
 }
 

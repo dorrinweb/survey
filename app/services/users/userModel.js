@@ -168,53 +168,50 @@ async checkRole(roleId){
     return await new RoleModel().view(roleId);
  }
 
- async updateHouseholdId(userId, householdId,session) {
+ async updateHouseholdId(userId, householdId/*,session*/) {
     try {
         const updatedUser = await this.model.findOneAndUpdate(
-            { '_id': userId },
-            { '$set': {'householdId':householdId} },
-            { returnOriginal: false, session } // استفاده از سشن در عملیات آپدیت
-        )
+            { '_id': userId }, 
+            { '$set': { 'householdId': householdId } },
+            { new: true /*, session */} 
+        );
         return updatedUser;
     } catch (e) {
         log(e); // Log the error for debugging
-        return -2 //"An error occurred while connecting the user to the household."
+        return -2; // "An error occurred while connecting the user to the household."
     }
 }
 
-// async addUsersToHousehold(householdId, users){
-//     const session = await this.model.startSession();
-//     session.startTransaction();
-//     try {
-//         // Prepare bulk operations for inserting users
-//         const bulkOperations = users.map((user) => ({
-//             insertOne: {
-//                 document: {
-//                     ...user, // Spread the user object (education, birthYear, etc.)
-//                     householdId, // Add householdId to the user
-//                 },
-//             },
-//         }));
-//         // Perform bulk insert
-//         const bulkWriteResult = await this.bulkWrite(bulkOperations, { session });
+async usersBulkWrite(householdId, users) {
+    try {
+        // آماده‌سازی عملیات bulk
+        const bulkOperations = users.map((user, index) => {
+            const userCode = 1 + index; // تعیین userCode با توجه به index
+            return {
+                updateOne: {
+                    filter: { householdId, userCode }, // فیلتر برای جستجوی کاربر
+                    update: {
+                        $set: {
+                            ...user,
+                            householdId: householdId,
+                            userCode: userCode,
+                            createdAt: datetime.toJalaali()
+                        }
+                    },
+                    upsert: true // اگر وجود نداشت، یک سند جدید ایجاد کن
+                }
+            };
+        });
+        // اجرای bulkWrite
+        const resultBulkwrite = await this.model.bulkWrite(bulkOperations);
+        return resultBulkwrite;
 
-//         // Extract inserted user IDs
-//         const insertedUserIds = bulkWriteResult.insertedIds.map((id) => id._id);
-//         const resultUpdateHouseHold = await this.houseHoldModel.updateMembers(householdId, insertedUserIds, session)
-//         // Commit the transaction
-//         await session.commitTransaction();
-//         session.endSession();
-//         return resultUpdateHouseHold
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
+}
 
- 
-//     } catch (e) {
-//         // Rollback transaction in case of error
-//         await session.abortTransaction();
-//         session.endSession();
-//         log(e); // Log the error for debugging
-//         return -2;
-
-//         }
-// }
+// 
 
 }

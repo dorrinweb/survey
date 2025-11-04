@@ -11,13 +11,27 @@ export default {
         ],
         "parameters": [
           {
+            "name": "x-token",
+            "in": "header",
+            "description": "userId, requester userId (This field is temporary and will be changed to user tocken after implementing user authentication and tokenization.)",
+            "required": true,
+            "type": "string"
+          },
+          {
+                    "name": "householdId",
+                    "in": "path",
+                    "description": "householdId",
+                    "required": true,
+                    "type": "string"
+                  }, 
+          {
             "name": "gender",
             "in": "formData",
             "description": "gender",
             "required": false,
             "enum": [
-                  'male', 
-                  'female'
+                  'زن', 
+                  'مرد'
               ],
             "type": "string"
           },
@@ -31,10 +45,12 @@ export default {
           }, 
           {           
             
-            "name": "workStartHour",
+            "name": "education",
             "in": "formData",
             "description": "education",
             "required": false,
+            "enum": ['بی‌سواد', 'ابتدایی', 'سیکل', 'دیپلم', 'فوق دیپلم', 'لیسانس', 'فوق لیسانس', 'دکترا'], // Only specified options are allowed
+
             "type": "string"
           }, 
           {
@@ -52,7 +68,7 @@ export default {
             
             "name": "workStartHour",
             "in": "formData",
-            "description": "workStartHour education",
+            "description": "workStartHour workStartHour",
             "required": false,
             "type": "string"
           }, 
@@ -103,10 +119,17 @@ export default {
               'محصل',
               'خانه‌دار',
               'سایر',
-              'null'
           ],
             "type": "string"
           },
+          {
+            "name": "relationWithHouseHold",
+            "in": "formData",
+            "description": "relationWithHouseHold",
+            "required": false,
+            "type": "string"
+          },
+          
         ],
         "responses": {
           "200": {

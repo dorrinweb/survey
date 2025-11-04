@@ -1,6 +1,13 @@
 import { Schema } from 'mongoose';
 import withBaseSchema from "../../core/baseSchema.js";
 
+
+// A plugin to automatically set getters
+function applyGetters(schema) {
+    schema.set('toObject', { getters: true, virtuals: true });
+    schema.set('toJSON', { getters: true, virtuals: true });
+}
+
 const UserSchema = new Schema(
     withBaseSchema(
         {
@@ -32,7 +39,7 @@ const UserSchema = new Schema(
             },
             gender: {
                 type: String, // User's gender
-                enum: ['male', 'female','null'], // Only specified options are allowed
+                enum: ['زن', 'مرد'], // Only specified options are allowed
 
             },
             job: {
@@ -61,7 +68,7 @@ const UserSchema = new Schema(
                     '3-6',
                     '6-10',
                     '10-15',
-                    'up 15'
+                    'up-15'
                 ], // Only specified options are allowed
             },
             expenses: {
@@ -71,7 +78,7 @@ const UserSchema = new Schema(
                     '3-6',
                     '6-10',
                     '10-15',
-                    'up 15'
+                    'up-15'
                 ], // Only specified options are allowed
             },
             hasDrivingLicense: {
@@ -87,11 +94,24 @@ const UserSchema = new Schema(
                 }
             ],
             workStartHour: {
-                type: String, // Work start time in HH:mm format (e.g., "08:00")
+                hour: {
+                    type: Number,
+                },
+                minute: {
+                    type: Number,
+                },
+                period: {
+                    type: String,
+                    enum: ['صبح', 'عصر'], // دوره AM/PM
+                }
+            },
+            relationWithHouseHold: {
+                type: String, 
             },
 
         }
     )
 );
-
+ // Add plugin to enable getters by default
+ UserSchema.plugin(applyGetters);
 export default UserSchema;
