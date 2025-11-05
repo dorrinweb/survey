@@ -10,9 +10,8 @@ const tripController = new TripController();
 const route = Router();
 try{
     route.post('/add',new AuthMiddleware().Auth,tripController.add);
-    route.get('/my-trips',tripController.myTrips);
-    // route.get('/view/:id',tripController.view);
-    // route.patch('/edit/:id',tripController.edit);
+    route.get('/user-trips/:id',new AuthMiddleware().Auth,tripController.userTrips);
+
 
 
 }catch(e){

@@ -259,13 +259,13 @@ export default {
     }
   }
 },
-    "/trip/my-trips": {
+    "/trip/user-trips/{id}": {
     "get": {
       "trips": [
         "Trip"
       ],
-      "summary": "My Trips Index",
-      "description": "List Of My Trips",
+      "summary": "user Trips Index",
+      "description": "List Of user Trips",
       "produces": [
         "application/json"
       ],
@@ -278,35 +278,12 @@ export default {
           "type": "string"
         }, 
         {
-          "name": "title",
-          "in": "query",
-          "description": "tag title",
-          "required": false,
+          "name": "id",
+          "in": "path",
+          "description": "user id",
+          "required": true,
           "type": "string"
-        },
-        {
-          "name": "sortType",
-          "in": "query",
-          "description": "sortType",
-          "required": false,
-          "enum": [
-            "asc",
-            "desc",
-          ],
-          "type": "string"
-        },
-        {
-          "name": "sortField",
-          "in": "query",
-          "description": "sortField",
-          "required": false,
-          "enum": [
-            '_id',
-            'title',
-            'createdAt',            
-          ],
-          "type": "string"
-        },
+        }
       ],
       "responses": {
         "200": {

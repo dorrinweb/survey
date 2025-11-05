@@ -111,14 +111,13 @@ async add(data) {
  * Note: To enhance performance, the trip fetching logic is implemented in the userTrips model 
  * (indexTripsByUser method) and called here for reusability and efficiency.
  */
-    async index(data) {
+    async index(userId) {
         try {
-            const userTripModelClass = new UserTripModel();
-            const result = await userTripModelClass.indexTripsByUser(data); // Fetch data from userTrips model
+            const result = await this.model.find({'userId' : userId}); // Fetch data from userTrips model
             return result;
         } catch (error) {
             log(error); // Log any errors for debugging
-            return error.toString(); // Return error as a string
+            return -1; // Return error as a string
         }
     }     
 }
