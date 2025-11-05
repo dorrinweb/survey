@@ -2,8 +2,9 @@ import BaseMiddleware from '../core/BaseMiddleware.js';
 import {getEnv, log} from '../core/utils.js';
 import swaggerJsdoc from 'swagger-jsdoc';
 
-import user from '../services/users/userSwagger.js';
+import User from '../services/users/userSwagger.js';
 import HouseHold from '../services/houseHolds/houseHoldSwagger.js';
+import Trip from '../services/trips/tripSwagger.js';
 
 
 
@@ -24,7 +25,8 @@ const options = {
     swaggerDefinition:{
       paths : {
         ...HouseHold,
-        ...user,
+        ...User,
+        ...Trip
       }
     }
 };

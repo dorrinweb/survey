@@ -132,4 +132,6 @@ const UserSchema = new Schema(
 
 // Add plugin to enable getters by default
 UserSchema.plugin(applyGetters);
+UserSchema.index({ householdId: 1 });
+
 export default UserSchema;

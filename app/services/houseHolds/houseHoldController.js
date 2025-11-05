@@ -97,7 +97,6 @@ async view(req, res) {
         const requesterId = this.safeString(this.input(req?.userToken?.userId));            
         // if (this.toObjectId(requesterId) === '')
     // return res.status(203).json({ "code": 2, "msg": translate.t('id_is_invalid'), 'isAuth': 0 });
-    log(requesterId)
     const resultView = await this.model.view(requesterId);
     if( typeof resultView === 'number' ){
         switch(resultView){
