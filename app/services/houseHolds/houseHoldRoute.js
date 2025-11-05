@@ -11,7 +11,7 @@ const route = Router();
 try{
      route.get('/index',new AuthMiddleware().Auth ,houseHoldController.index);
      route.post('/add',new AuthMiddleware().Auth ,houseHoldController.add);
-     route.post('/my-household',new AuthMiddleware().Auth ,houseHoldController.view);
+     route.get('/my-household',new AuthMiddleware().Auth ,houseHoldController.view);
 
     
 }catch(e){

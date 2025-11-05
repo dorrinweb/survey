@@ -150,7 +150,7 @@ export default {
   },
 
   "/household/my-household": {
-    "post": {
+    "get": {
       "tags": [
         "Household"
       ],
