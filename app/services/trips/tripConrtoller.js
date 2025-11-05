@@ -108,37 +108,29 @@ export default class TripController extends BaseController {
 * @param {*} res 
 * @returns 
 */
-    async myTrips(req, res) {
+    async userTrips(req, res) {
         try {
-        const allowedSortFields = ['_id', 'title', 'createdAt'];
-        const requesterId = this.safeString(req.headers['x-token']);
-        const lawyerId = requesterId;
-        const title = normalizePersianString(this.safeString(req?.query?.title));
-        if (this.toObjectId(requesterId) === '')
-        return res.status(203).json({ "code": 2, "msg": translate.t('id_is_invalid'), 'isAuth': 0 });
-        const sortType = (req.query?.sortType && req.query?.sortType === 'asc') ? 1 : -1;
-        const sortField = (req?.query?.sortField && allowedSortFields.includes(req?.query?.sortField)) ? req?.query?.sortField : '_id';
-        const myTripData = {
-        requesterId,
-        lawyerId,
-        title,
-        sortType,
-        sortField
-        }
-        const resultIndex = await this.model.index(myTripData);
-        if (resultIndex?.trips) {
-            if (!resultIndex?.trips.length)
-                return res.json({ "code": 0, "msg": translate.t('any_records_does_not_exist'), 'data': resultIndex, 'isAuth': 0 });
-            else
-                return res.json({ 'code': 0, 'data': resultIndex, 'isAuth': 0 });
-        } else
-        return res.status(501).json({ "code": -1, "msg": translate.t('index_records_faild'), "data": {}, 'isAuth': 0 });
+            const requesterId = this.safeString(req.headers['x-token']);
+            const userId = this.safeString(this.input(req?.params?.id));
+            // if (this.toObjectId(requesterId) === '')
+            // return res.status(203).json({ "code": 2, "msg": translate.t('id_is_invalid'), 'isAuth': 0 });
+            
+            const resultIndex = await this.model.index(userId);
+            const data = {
+                "trips" : resultIndex,
+            }       
+            if (Array.isArray(resultIndex)) {
+                if (!resultIndex?.length)
+                    return res.json({ "code": 0, "msg": translate.t('any_records_does_not_exist'), 'data': data, 'isAuth': 0 });
+                else
+                    return res.json({ 'code': 0, 'data': data, 'isAuth': 0 });
+            } else
+            return res.status(501).json({ "code": -1, "msg": translate.t('index_records_faild'), "data": {}, 'isAuth': 0 });
         
         } catch (e) {
         super.toError(e, req, res);
         }
-        }
-
+    }
 
 }
 
