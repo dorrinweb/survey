@@ -23,10 +23,10 @@ const tripSchema = new Schema(
             departure: {
                 time:  {
                     hour: {
-                        type: Number,
+                        type: String,
                     },
                     minute: {
-                        type: Number,
+                        type: String,
                     },
                     period: {
                         type: String,
@@ -41,10 +41,10 @@ const tripSchema = new Schema(
             destination: {
                 time: {
                     hour: {
-                        type: Number,
+                        type: String,
                     },
                     minute: {
-                        type: Number,
+                        type: String,
                     },
                     period: {
                         type: String,
@@ -91,6 +91,7 @@ const tripSchema = new Schema(
                     "پارکینگ شخصی",
                     "پارکینگ عمومی",
                     "پارکینگ محل کار",
+                    ''
                 ],
             },
             parkingFee: {

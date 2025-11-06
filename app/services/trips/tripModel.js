@@ -35,7 +35,6 @@ async add(data) {
     try {
         // Get userId and trips from the input data
         const { userId, requesterId, trips } = data;
-
         // Validate trips array
         if (!Array.isArray(trips) || trips.length === 0) {
             // Invalid trips array
@@ -51,7 +50,7 @@ async add(data) {
         // Prepare trips data with auto-generated trip numbers and userId
         const tripsToInsert = trips.map((trip, index) => {
             // Check and set departure for trips (from the second trip onward)
-            if (index > 0 && !trip.departure && previousDestination) {
+            if (index > 0 && (!trip.departure.location || trip.departure.location == '') && previousDestination) {
                 trip.departure = previousDestination; // Use previous destination as departure
             }
 
