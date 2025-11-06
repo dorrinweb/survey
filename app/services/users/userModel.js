@@ -222,6 +222,19 @@ async findUsersOfHousehold(householdId){
     }
 }
 
+async getProfile(userId) {
+    try{
+        // userId = toObjectId(userId);
+        if (userId) {
+            let user = await this.model.findOne({ '_id': userId })
+                                        
+        return user
+    }
+    }catch (e) {
+        return e.toString();
+    }  
+}
+
 // 
 
 }

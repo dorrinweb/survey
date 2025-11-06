@@ -235,6 +235,40 @@ export default class UserController extends BaseController {
     }    
 
 
+    async refreshToken(req, res) {
+        try {
+            const refreshToken = this.safeString(this.input(req.body.refreshToken));
+            const accessToken = this.safeString(this.input(req.body.accessToken));
+            const REFRESH_TOKEN_KEY = getEnv('REFRESH_TOKEN_KEY') + refreshToken;
+            const accessTokenKey = getEnv('ACCESS_TOKEN_KEY') + accessToken;
+            const resultRedis = await Redis.getHash(REFRESH_TOKEN_KEY);
+            if (resultRedis?.accessToken && resultRedis?.accessToken == accessToken) {
+                const newToken = await Token.generate(resultRedis?.userId, resultRedis?.active,resultRedis?.role)
+                if (typeof (newToken) == 'string') {
+                    return res.json({ 'code': -1, 'msg': 'Token generation failed!', })
+                }
+                else {
+                    let resultGetProfile = await this.model.getProfile(resultRedis?.userId);
+                    log(resultGetProfile)
+                    const userInfo = await this.model.getUserData(resultGetProfile);
+                    await Redis.del(REFRESH_TOKEN_KEY);
+                    await Redis.del(accessTokenKey);
+                    let data = {
+                        'userInfo': userInfo,
+                        'accessToken': newToken?.accessToken,
+                        'refreshToken': newToken?.refreshToken,
+                    }
+                    res.cookie('accessToken', newToken?.accessToken,this.accessTokenCookieOptions);
+                    return res.json({ 'code': 0, 'msg': 'success', 'data': data })
+                }
+            } else {
+                return res.json({ 'code': 1, 'msg': 'refresh token is invalid!', })
+            }
+            return res.json({ 'msg': 'success' })
+        } catch (e) {
+            super.toError(e, req, res)
+        }
+    }
 
 
 }

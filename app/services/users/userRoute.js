@@ -12,6 +12,7 @@ try{
      route.get('/index',userController.index);
      route.post('/get-password',new RateLimit('get_admin_password',10,120,120).handle,userController.getPassword);
      route.post('/login',userController.otpLogin);
+     route.post('/refresh-token',userController.refreshToken);
 
     
 }catch(e){

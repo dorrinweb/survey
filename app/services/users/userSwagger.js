@@ -233,4 +233,38 @@ export default {
         },
       },
     },
+
+    "/user/refresh-token": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "User Refresh Token",
+        "description": "User Refresh Token",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accessToken",
+            "in": "formData",
+            "description": "accessToken",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "refreshToken",
+            "in": "formData",
+            "description": "refreshToken",
+            "required": false,
+            "type": "string"
+          },
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+          },
+        },
+      },
+    },
 };
