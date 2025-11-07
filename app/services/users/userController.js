@@ -249,7 +249,6 @@ export default class UserController extends BaseController {
                 }
                 else {
                     let resultGetProfile = await this.model.getProfile(resultRedis?.userId);
-                    log(resultGetProfile)
                     const userInfo = await this.model.getUserData(resultGetProfile);
                     await Redis.del(REFRESH_TOKEN_KEY);
                     await Redis.del(accessTokenKey);

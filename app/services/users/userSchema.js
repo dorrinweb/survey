@@ -47,6 +47,10 @@ const UserSchema = new Schema(
                 type: Schema.Types.ObjectId, // Reference to the household the user belongs to
                 ref: "household",
             },
+            househodldCode :{
+                type : Number,
+                default : null
+            },
             isHeadOfHousehold: {
                 type: Boolean, // Whether the user is the head of the household (the one who fills general household info)
                 default: false

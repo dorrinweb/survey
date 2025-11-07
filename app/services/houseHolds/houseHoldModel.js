@@ -158,12 +158,15 @@ async updateMembers(householdId, userIds, session){
 
 
 
-async addUsersToHousehold(householdId, users){
+async addUsersToHousehold(householdInfo, users){
     //     const session = await this.model.startSession();
     //     session.startTransaction();
         try {
+            const householdId = householdInfo?._id
+            const householdCode = householdInfo?.householdCode
+
     //         // Prepare bulk operations for inserting users
-            const usersBulkWriteResult = await this.userModel.usersBulkWrite(householdId,users/*, { session }*/);
+            const usersBulkWriteResult = await this.userModel.usersBulkWrite(householdId,householdCode,users/*, { session }*/);
     
     //         // Extract inserted user IDs
     //         const insertedUserIds = bulkWriteResult.insertedIds.map((id) => id._id);

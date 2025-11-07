@@ -54,10 +54,9 @@ export default class HouseHoldController extends BaseController {
                        
                     }
             }
-
             // // 2. ذخیره‌سازی کاربران
             const users = req.body.individuals
-            const resultAddUsers = await this.model.addUsersToHousehold(resultAdd._id, users/*, { session }*/);
+            const resultAddUsers = await this.model.addUsersToHousehold(resultAdd, users/*, { session }*/);
             if (typeof resultAddUsers == 'number') {
                 switch (resultAddUsers) {
                     case -1 :
@@ -101,7 +100,7 @@ async view(req, res) {
     if( typeof resultView === 'number' ){
         switch(resultView){
             case -1 :
-                return res.json({"code" : -1 ,"msg" : translate.t('rows_not_found'),'isAuth' : 0});
+                return res.json({"code" : -1 ,"msg" : translate.t('rows_not_found'),'isAuth' : 0, 'data' : []});
             break;
             case -2 :
                 return res.json({"code" : -1 ,"msg" : translate.t('household.requester_is_not_owner_household'),'isAuth' : 0});

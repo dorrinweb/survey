@@ -16,7 +16,6 @@ export default class UserModel {
     }
     async add(data/*,firstName,lastName,phone,roleId,nationalId*/) {
         try{
-            log(data)
             if(data?.phone){
                 const resultCheckPhone = await this.checkPhone(data?.phone);
                 if(resultCheckPhone > 0){
@@ -182,8 +181,10 @@ async checkRole(roleId){
     }
 }
 
-async usersBulkWrite(householdId, users) {
+async usersBulkWrite(householdId,househodldCode, users) {
     try {
+        log(householdId)
+        log(househodldCode)
         // آماده‌سازی عملیات bulk
         const bulkOperations = users.map((user, index) => {
             const userCode = 1 + index; // تعیین userCode با توجه به index
@@ -194,6 +195,7 @@ async usersBulkWrite(householdId, users) {
                         $set: {
                             ...user,
                             householdId: householdId,
+                            househodldCode: househodldCode,
                             userCode: userCode,
                             createdAt: datetime.toJalaali()
                         }
