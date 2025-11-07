@@ -91,7 +91,6 @@ export default class TripController extends BaseController {
                         req.method,
                         `The user by Id : ${requesterId} created new trips`
                     );
-                    log('resuhfghltAddTrip')
 
                     return res.status(201).json({ "code": 0, "msg": translate.t('successfuly_add'), "data": resultAddTrip, 'isAuth': 0 });
 

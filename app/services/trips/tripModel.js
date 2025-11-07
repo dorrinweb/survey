@@ -51,10 +51,8 @@ async add(data) {
 
         // Prepare trips data with auto-generated trip numbers and userId
         const userInfo = await this.userModel.getProfile(userId)
-        log(userInfo)
         const userCode = userInfo?.userCode;
         const householdCode = userInfo?.householdCode;
-        log(householdCode)
         const tripsToInsert = trips.map((trip, index) => {
             // Check and set departure for trips (from the second trip onward)
             if (index > 0 && (!trip.departure.location || trip.departure.location == '') && previousDestination) {
