@@ -181,10 +181,9 @@ async checkRole(roleId){
     }
 }
 
-async usersBulkWrite(householdId,househodldCode, users) {
+async usersBulkWrite(householdId,householdCode, users) {
     try {
-        log(householdId)
-        log(househodldCode)
+
         // آماده‌سازی عملیات bulk
         const bulkOperations = users.map((user, index) => {
             const userCode = 1 + index; // تعیین userCode با توجه به index
@@ -195,7 +194,7 @@ async usersBulkWrite(householdId,househodldCode, users) {
                         $set: {
                             ...user,
                             householdId: householdId,
-                            househodldCode: househodldCode,
+                            householdCode: householdCode,
                             userCode: userCode,
                             createdAt: datetime.toJalaali()
                         }

@@ -3,14 +3,16 @@ import { MongoDB, Redis } from '../../global.js'
 import TripSchema from './tripSchema.js';
 import { getEnv, log, random, toObjectId, removeKeysFromObject } from '../../core/utils.js';
 import datetime from '../../core/datetime.js';
-
+import UserModel from '../users/userModel.js';
 
 import { decode } from 'html-entities';
 
 export default class TripModel {
     constructor() {
         this.model = MongoDB.db.model('trip', TripSchema);
-        this.collation = { locale: 'fa', strength: 2 }
+        this.collation = { locale: 'fa', strength: 2 };
+        this.userModel = new UserModel()
+
 
     }
     
@@ -48,6 +50,11 @@ async add(data) {
         let previousDestination = null;
 
         // Prepare trips data with auto-generated trip numbers and userId
+        const userInfo = await this.userModel.getProfile(userId)
+        log(userInfo)
+        const userCode = userInfo?.userCode;
+        const householdCode = userInfo?.householdCode;
+        log(householdCode)
         const tripsToInsert = trips.map((trip, index) => {
             // Check and set departure for trips (from the second trip onward)
             if (index > 0 && (!trip.departure.location || trip.departure.location == '') && previousDestination) {
@@ -61,11 +68,12 @@ async add(data) {
                 ...trip, // Include all trip data from the input
                 tripNumber: 1 + index, // Auto-generate trip number starting from 1
                 userId, // Set the userId from input data
+                userCode,
+                householdCode,
                 createdById: requesterId, // Set the ID of the requester who is creating the trips
                 createdAt: datetime.toJalaali(), // Set the creation date in Jalaali format
             };
         });
-
         // Insert all trips at once using insertMany
         const newTrips = await this.model.insertMany(tripsToInsert, { session });
 

@@ -20,6 +20,14 @@ const tripSchema = new Schema(
                 ref: 'user', // Name of the User model
                 required: true // User ID is mandatory
             },
+            userCode :{
+                type : Number,
+                default : null
+            },
+            householdCode :{
+                type : Number,
+                default : null
+            },
             departure: {
                 time:  {
                     hour: {

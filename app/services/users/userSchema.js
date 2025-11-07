@@ -47,7 +47,7 @@ const UserSchema = new Schema(
                 type: Schema.Types.ObjectId, // Reference to the household the user belongs to
                 ref: "household",
             },
-            househodldCode :{
+            householdCode :{
                 type : Number,
                 default : null
             },
