@@ -86,7 +86,9 @@ export default class HouseHoldModel {
                 address: currentHousehold.address,
                 householdCount: currentHousehold.householdCount,
                 carCount: currentHousehold.carCount,
-                parkingSpacesCount: currentHousehold.parkingSpacesCount
+                parkingSpacesCount: currentHousehold.parkingSpacesCount,
+                postCode: currentHousehold.postCode,
+
             };
     
             // Return the formatted output

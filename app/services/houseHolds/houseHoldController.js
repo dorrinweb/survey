@@ -39,6 +39,7 @@ export default class HouseHoldController extends BaseController {
                 address: this.safeString(req.body?.householdData?.address),
                 householdCount: convertToEnglishNumber(req.body?.householdData?.householdCount),
                 carCount: convertToEnglishNumber(req.body?.householdData?.carCount),
+                postCode : this.safeString(req.body?.householdData?.postCode),
                 parkingSpacesCount: convertToEnglishNumber(req.body?.householdData?.parkingSpacesCount),
                 hasParking: req.body?.householdData?.hasParking || false,
                 members: [requesterId] // Add the current user as the first member

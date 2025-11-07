@@ -15,6 +15,10 @@ const HouseholdSchema = new Schema(
                 type: Number, // Number of members in the household
                 required: true,
             },
+            postCode: {
+                type: Number, // Number of members in the household
+                default : null
+            },
             address: {
                 type: String, // Address of the household
                 required: true
