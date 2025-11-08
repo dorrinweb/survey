@@ -233,8 +233,81 @@ export default class UserController extends BaseController {
             super.toError(e, req, res);
         }
     }    
+    async noTrip(req, res) {
+        try {
 
+            // const validationErrors = await userValidation.addUsersToHousehold(req);
+            // if (!validationErrors.isEmpty()) {
+            //     const errorMessage = validationErrors?.errors[0].msg;
+            //     return res.status(203).json(errorMessage)
+            // }
+            
+            // const phone = this.toNumber(this.input(req.body.phone));
+            // const userData = {
+            //     'phone' : phone
+            // }
+            const { userId } = req.body;
+           
+            const resultNoTripUser = await this.model.userIsNoTrip(userId);
+            
+            if (typeof resultNoTripUser === 'number') {
+                switch (resultNoTripUser) {
+                    case -2:
+                        return res.status(500).json({ "code": 2, "msg": translate.t('user.An error occurred while adding users to the household.'), 'isAuth': 0 });
+                    break;
+                }
+            }
+            else {
+                // if (resultAddUsersToHousehold?._id) {
+                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_noTripUser'),"data": resultNoTripUser,'isAuth': 0 });
+                // }
+                // else {
+                //     return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
+                // }
+            }
 
+        } catch (e) {
+            super.toError(e, req, res);
+        }
+    }    
+   
+    async noInCity(req, res) {
+        try {
+
+            // const validationErrors = await userValidation.addUsersToHousehold(req);
+            // if (!validationErrors.isEmpty()) {
+            //     const errorMessage = validationErrors?.errors[0].msg;
+            //     return res.status(203).json(errorMessage)
+            // }
+            
+            // const phone = this.toNumber(this.input(req.body.phone));
+            // const userData = {
+            //     'phone' : phone
+            // }
+            const { userId } = req.body;
+           
+            const resultNoInCityUser = await this.model.userIsNoInCity(userId);
+            
+            if (typeof resultNoInCityUser === 'number') {
+                switch (resultNoInCityUser) {
+                    case -2:
+                        return res.status(500).json({ "code": 2, "msg": translate.t('user.An error occurred while adding users to the household.'), 'isAuth': 0 });
+                    break;
+                }
+            }
+            else {
+                // if (resultAddUsersToHousehold?._id) {
+                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_noTripUser'),"data": resultNoInCityUser,'isAuth': 0 });
+                // }
+                // else {
+                //     return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
+                // }
+            }
+
+        } catch (e) {
+            super.toError(e, req, res);
+        }
+    }
     async refreshToken(req, res) {
         try {
             const refreshToken = this.safeString(this.input(req.body.refreshToken));

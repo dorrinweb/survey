@@ -9,12 +9,14 @@ import * as tripValidation from './tripValidations.js'
 import { fileExists, unlink } from '../../core/fs.js'
 import { ResultWithContext } from 'express-validator/src/chain/context-runner-impl.js'
 import { uploadFile, removeFileFromServer, getFilePath } from '../../core/uploader.js';
+import UserModel from '../users/userModel.js';
 
 export default class TripController extends BaseController {
     #currentUrl = getEnv('APP_URL') + 'trip/';
     constructor() {
         super();
         this.model = new TripModel();
+        this.userModel = new UserModel()
     }
 
     /**
@@ -115,9 +117,16 @@ export default class TripController extends BaseController {
             // return res.status(203).json({ "code": 2, "msg": translate.t('id_is_invalid'), 'isAuth': 0 });
             
             const resultIndex = await this.model.index(userId);
-            const data = {
+            let data = {
                 "trips" : resultIndex,
-            }       
+
+            } 
+            if(resultIndex.length == 0 ){
+               const userInfo =  await this.userModel.getProfile(userId)
+               data.noTrip = userInfo?.noTrip;
+               data.noInCity = userInfo?.noInCity
+            }
+                 
             if (Array.isArray(resultIndex)) {
                 if (!resultIndex?.length)
                     return res.json({ "code": 0, "msg": translate.t('any_records_does_not_exist'), 'data': data, 'isAuth': 0 });

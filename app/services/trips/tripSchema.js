@@ -68,30 +68,6 @@ const tripSchema = new Schema(
                 type: String, // Purpose of the trip (list of selected purposes)
                 required: true
             },
-            transportationMode: {
-                type: String, // Modes of transportation used during the trip
-                enum: [
-                    "خودروی شخصی راننده (من)",
-                    "خودروی شخصی راننده (همراه)",
-                    "تاکسی اینترنتی (سواری)",
-                    "تاکسی خطی (سواری)",
-                    "اتوبوس تندرو (BRT)",
-                    "اتوبوس واحد",
-                    "مینی‌بوس",
-                    "وانت",
-                    "کامیون",
-                    "موتور سیکلت",
-                    "دوچرخه",
-                    "پیاده",
-                    "قطار شهری",
-                    "قطار",
-                    "وسایل نقلیه عمومی دیگر",
-                    "سرویس مدرسه (سواری)",
-                    "سرویس مدرسه (مینی‌بوس)",
-                    "سرویس مدرسه (اتوبوس)",
-                ],
-                required: true
-            },
             parking: {
                 type: String, // Parking 
                 enum: [

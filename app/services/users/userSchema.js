@@ -87,26 +87,25 @@ const UserSchema = new Schema(
             },
             income: {
                 type: String, // Average monthly income in million Toman
-                enum: [
-                    '0-3',
-                    '3-6',
-                    '6-10',
-                    '10-15',
-                    'up-15'
-                ], // Only specified options are allowed
             },
             expenses: {
                 type: String, // Average monthly expenses in million Toman
-                enum: [
-                    '0-3',
-                    '3-6',
-                    '6-10',
-                    '10-15',
-                    'up-15'
-                ], // Only specified options are allowed
+
             },
             hasDrivingLicense: {
                 type: Boolean, // Whether the user has a driving license
+            },
+            noTrip: {
+                type: Boolean,
+                default : false // Whether the user has a driving license
+            },
+            noInCity: {
+                type: Boolean,
+                default: false // Whether the user has a driving license
+            },
+            tripReviewed: {
+                type: Boolean,
+                default: false // Whether the user has a driving license
             },
             hasCarOwnership: {
                 type: Boolean, // Whether the user owns a car

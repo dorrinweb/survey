@@ -13,6 +13,8 @@ try{
      route.post('/get-password',new RateLimit('get_admin_password',10,120,120).handle,userController.getPassword);
      route.post('/login',userController.otpLogin);
      route.post('/refresh-token',userController.refreshToken);
+     route.post('/no-trip',userController.noTrip);
+     route.post('/no-in-city',userController.noInCity);
 
     
 }catch(e){

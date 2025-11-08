@@ -181,6 +181,33 @@ async checkRole(roleId){
     }
 }
 
+async userIsNoTrip(userId/*,session*/) {
+    try {
+        const updatedUser = await this.model.findOneAndUpdate(
+            { '_id': userId }, 
+            { '$set': { 'noTrip': true } },
+            { new: true /*, session */} 
+        );
+        return updatedUser;
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
+}
+async userIsNoInCity(userId/*,session*/) {
+    try {
+        const updatedUser = await this.model.findOneAndUpdate(
+            { '_id': userId }, 
+            { '$set': { 'noInCity': true } },
+            { new: true /*, session */} 
+        );
+        return updatedUser;
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
+}
+
 async usersBulkWrite(householdId,householdCode, users) {
     try {
 
