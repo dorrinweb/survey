@@ -1,18 +1,40 @@
 import { Schema } from 'mongoose';
 import withBaseSchema from "../../core/baseSchema.js";
 
+// A plugin to automatically set getters
+function applyGetters(schema) {
+    schema.set('toObject', { getters: true, virtuals: true });
+    schema.set('toJSON', { getters: true, virtuals: true });
+}
+
+const CarSchema = new Schema({
+    owner: {
+        type: Schema.Types.ObjectId, // Refers to the user who owns the car
+        ref: "user",
+        required: true
+    },
+    carType: {
+        type: String, // Type of the car
+        enum: ['سواری', 'وانت', 'کامیون', 'موتور سیکلت', 'اتوبوس', 'مینی‌بوس', 'تراکتور', 'کامیونت', 'سایر'], // Only specified car types are allowed
+    },
+    carName: {
+        type: String, // Name of the car
+    },
+    carYear: {
+        type: Number, // Age of the car model
+    },
+    fuelType: {
+        type: String, // Type of fuel used in the car
+        enum: ['بنزینی', 'گازوئیلی', 'برقی', 'گازسوز', 'هیبریدی'], // Only specified fuel types are allowed
+    },
+});
+
 const UserSchema = new Schema(
     withBaseSchema(
         {
-            userCode:{
+            userCode: {
                 type: Number,
                 required: true, 
-            },
-            fullName: {
-                type: String,
-            },
-            description: {
-                type: String,
             },
             phone: {
                 type: Number,
@@ -25,14 +47,14 @@ const UserSchema = new Schema(
                 type: Schema.Types.ObjectId, // Reference to the household the user belongs to
                 ref: "household",
             },
+            householdCode :{
+                type : Number,
+                default : null
+            },
             isHeadOfHousehold: {
                 type: Boolean, // Whether the user is the head of the household (the one who fills general household info)
                 default: false
             },
-            address: {
-                type: String,
-            },
-           
             education: {
                 type: String, // User's education level
                 enum: ['بی‌سواد', 'ابتدایی', 'سیکل', 'دیپلم', 'فوق دیپلم', 'لیسانس', 'فوق لیسانس', 'دکترا'], // Only specified options are allowed
@@ -42,8 +64,7 @@ const UserSchema = new Schema(
             },
             gender: {
                 type: String, // User's gender
-                enum: ['male', 'female','null'], // Only specified options are allowed
-
+                enum: ['زن', 'مرد'], // Only specified options are allowed
             },
             job: {
                 type: String, // User's occupation
@@ -64,44 +85,56 @@ const UserSchema = new Schema(
                     'null'
                 ], // Only specified options are allowed
             },
-            monthlyIncome: {
+            income: {
                 type: String, // Average monthly income in million Toman
-                enum: [
-                    '0-3',
-                    '3-6',
-                    '6-10',
-                    '10-15',
-                    'up 15'
-                ], // Only specified options are allowed
             },
-            monthlyExpenses: {
+            expenses: {
                 type: String, // Average monthly expenses in million Toman
-                enum: [
-                    '0-3',
-                    '3-6',
-                    '6-10',
-                    '10-15',
-                    'up 15'
-                ], // Only specified options are allowed
+
             },
             hasDrivingLicense: {
                 type: Boolean, // Whether the user has a driving license
             },
+            noTrip: {
+                type: Boolean,
+                default : false // Whether the user has a driving license
+            },
+            noInCity: {
+                type: Boolean,
+                default: false // Whether the user has a driving license
+            },
+            tripReviewed: {
+                type: Boolean,
+                default: false // Whether the user has a driving license
+            },
             hasCarOwnership: {
                 type: Boolean, // Whether the user owns a car
             },
-            cars: [
-                {
-                    type: Schema.Types.ObjectId, // List of cars owned by the user
-                    ref: "car"
-                }
-            ],
-            workStartHour: {
-                type: String, // Work start time in HH:mm format (e.g., "08:00")
+            carDetails: {
+                type: [CarSchema], // List of cars owned by the user
+                default: [] // Default to an empty array
             },
-
+            workStartHour: {
+                hour: {
+                    type: Number,
+                },
+                minute: {
+                    type: Number,
+                },
+                period: {
+                    type: String,
+                    enum: ['صبح', 'عصر'], // دوره AM/PM
+                }
+            },
+            relationWithHouseHold: {
+                type: String, 
+            },
         }
     )
 );
+
+// Add plugin to enable getters by default
+UserSchema.plugin(applyGetters);
+UserSchema.index({ householdId: 1 });
 
 export default UserSchema;

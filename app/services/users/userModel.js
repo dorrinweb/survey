@@ -6,15 +6,16 @@ import { getEnv, log, random, toObjectId } from '../../core/utils.js';
 import datetime from '../../core/datetime.js';
 import crypto from '../../core/crypto.js';
 import RoleModel from '../roles/roleModel.js'
+import HouseHoldModel from '../houseHolds/houseHoldModel.js';
 
 export default class UserModel {
     constructor() {
         this.model = MongoDB.db.model('user', UserSchema);
+        // this.houseHoldModel = new HouseHoldModel()
 
     }
     async add(data/*,firstName,lastName,phone,roleId,nationalId*/) {
         try{
-            log(data)
             if(data?.phone){
                 const resultCheckPhone = await this.checkPhone(data?.phone);
                 if(resultCheckPhone > 0){
@@ -166,20 +167,102 @@ async checkRole(roleId){
     return await new RoleModel().view(roleId);
  }
 
- async updateHouseholdId(userId, householdId,session) {
+ async updateHouseholdId(userId, householdId/*,session*/) {
     try {
         const updatedUser = await this.model.findOneAndUpdate(
-            { '_id': userId },
-            { '$set': {'householdId':householdId} },
-            { returnOriginal: false, session } // استفاده از سشن در عملیات آپدیت
-        )
+            { '_id': userId }, 
+            { '$set': { 'householdId': householdId } },
+            { new: true /*, session */} 
+        );
         return updatedUser;
     } catch (e) {
         log(e); // Log the error for debugging
-        return -2 //"An error occurred while connecting the user to the household."
+        return -2; // "An error occurred while connecting the user to the household."
     }
 }
 
+async userIsNoTrip(userId/*,session*/) {
+    try {
+        const updatedUser = await this.model.findOneAndUpdate(
+            { '_id': userId }, 
+            { '$set': { 'noTrip': true } },
+            { new: true /*, session */} 
+        );
+        return updatedUser;
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
+}
+async userIsNoInCity(userId/*,session*/) {
+    try {
+        const updatedUser = await this.model.findOneAndUpdate(
+            { '_id': userId }, 
+            { '$set': { 'noInCity': true } },
+            { new: true /*, session */} 
+        );
+        return updatedUser;
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
 }
 
+async usersBulkWrite(householdId,householdCode, users) {
+    try {
 
+        // آماده‌سازی عملیات bulk
+        const bulkOperations = users.map((user, index) => {
+            const userCode = 1 + index; // تعیین userCode با توجه به index
+            return {
+                updateOne: {
+                    filter: { householdId, userCode }, // فیلتر برای جستجوی کاربر
+                    update: {
+                        $set: {
+                            ...user,
+                            householdId: householdId,
+                            householdCode: householdCode,
+                            userCode: userCode,
+                            createdAt: datetime.toJalaali()
+                        }
+                    },
+                    upsert: true // اگر وجود نداشت، یک سند جدید ایجاد کن
+                }
+            };
+        });
+        // اجرای bulkWrite
+        const resultBulkwrite = await this.model.bulkWrite(bulkOperations);
+        return resultBulkwrite;
+
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
+}
+
+async findUsersOfHousehold(householdId){
+    try {
+        const users = await this.model.find({ householdId: householdId })
+        return users;
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while featching users "
+    }
+}
+
+async getProfile(userId) {
+    try{
+        // userId = toObjectId(userId);
+        if (userId) {
+            let user = await this.model.findOne({ '_id': userId })
+                                        
+        return user
+    }
+    }catch (e) {
+        return e.toString();
+    }  
+}
+
+// 
+
+}

@@ -25,48 +25,6 @@ export default class UserController extends BaseController {
         
     }
 
-       /**
-     * 
-     * @param {*} req 
-     * @param {*} res 
-     * @returns 
-     */
-       async register(req, res) {
-        try {
-
-            const validationErrors = await userValidation.register(req);
-            if (!validationErrors.isEmpty()) {
-                const errorMessage = validationErrors?.errors[0].msg;
-                return res.status(203).json(errorMessage)
-            }
-            
-            const phone = this.toNumber(this.input(req.body.phone));
-            const userData = {
-                'phone' : phone
-            }
-            const resultRegisterUser = await this.model.register(userData);
-            
-            if (typeof resultRegisterUser === 'number') {
-                switch (resultRegisterUser) {
-                    case -1:
-                        return res.status(406).json({ "code": 7, "msg": translate.t('user.duplicate_phone'), 'isAuth': 0 });
-                        break;
-                }
-            }
-            else {
-                if (resultRegisterUser?._id) {
-                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_register'),"data": resultRegisterUser,'isAuth': 0 });
-                }
-                else {
-                    return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
-                }
-            }
-
-        } catch (e) {
-            super.toError(e, req, res);
-        }
-    }
-
     async index(req, res) {
         try {
             const resultUsersList = await this.model.index();            
@@ -93,6 +51,8 @@ export default class UserController extends BaseController {
 
     async getPassword(req, res) {
         try {
+            log('ddddddd')
+
             const phone = this.toNumber(convertToEnglishNumber(this.input(req.body.phone)));
             req.body.phone = phone;
             const validationErrors = await userValidation.getPassword(req, res);
@@ -228,6 +188,159 @@ export default class UserController extends BaseController {
     }
 
 
+       /**
+     * 
+     * @param {*} req 
+     * @param {*} res 
+     * @returns 
+     */
+    async addUsersToHousehold(req, res) {
+        try {
+
+            // const validationErrors = await userValidation.addUsersToHousehold(req);
+            // if (!validationErrors.isEmpty()) {
+            //     const errorMessage = validationErrors?.errors[0].msg;
+            //     return res.status(203).json(errorMessage)
+            // }
+            
+            // const phone = this.toNumber(this.input(req.body.phone));
+            // const userData = {
+            //     'phone' : phone
+            // }
+            const { householdId, users } = req.body;
+            if (!householdId || !users || !Array.isArray(users) || users.length === 0) {
+                return res.status(400).json({ status: -1, message: "Invalid inputs. Please provide a householdId and an array of users." });
+            }
+            const resultAddUsersToHousehold = await this.model.addUsersToHousehold(householdId, users);
+            
+            if (typeof resultAddUsersToHousehold === 'number') {
+                switch (resultAddUsersToHousehold) {
+                    case -2:
+                        return res.status(500).json({ "code": 2, "msg": translate.t('user.An error occurred while adding users to the household.'), 'isAuth': 0 });
+                    break;
+                }
+            }
+            else {
+                // if (resultAddUsersToHousehold?._id) {
+                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_register'),"data": resultAddUsersToHousehold,'isAuth': 0 });
+                // }
+                // else {
+                //     return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
+                // }
+            }
+
+        } catch (e) {
+            super.toError(e, req, res);
+        }
+    }    
+    async noTrip(req, res) {
+        try {
+
+            // const validationErrors = await userValidation.addUsersToHousehold(req);
+            // if (!validationErrors.isEmpty()) {
+            //     const errorMessage = validationErrors?.errors[0].msg;
+            //     return res.status(203).json(errorMessage)
+            // }
+            
+            // const phone = this.toNumber(this.input(req.body.phone));
+            // const userData = {
+            //     'phone' : phone
+            // }
+            const { userId } = req.body;
+           
+            const resultNoTripUser = await this.model.userIsNoTrip(userId);
+            
+            if (typeof resultNoTripUser === 'number') {
+                switch (resultNoTripUser) {
+                    case -2:
+                        return res.status(500).json({ "code": 2, "msg": translate.t('user.An error occurred while adding users to the household.'), 'isAuth': 0 });
+                    break;
+                }
+            }
+            else {
+                // if (resultAddUsersToHousehold?._id) {
+                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_noTripUser'),"data": resultNoTripUser,'isAuth': 0 });
+                // }
+                // else {
+                //     return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
+                // }
+            }
+
+        } catch (e) {
+            super.toError(e, req, res);
+        }
+    }    
+   
+    async noInCity(req, res) {
+        try {
+
+            // const validationErrors = await userValidation.addUsersToHousehold(req);
+            // if (!validationErrors.isEmpty()) {
+            //     const errorMessage = validationErrors?.errors[0].msg;
+            //     return res.status(203).json(errorMessage)
+            // }
+            
+            // const phone = this.toNumber(this.input(req.body.phone));
+            // const userData = {
+            //     'phone' : phone
+            // }
+            const { userId } = req.body;
+           
+            const resultNoInCityUser = await this.model.userIsNoInCity(userId);
+            
+            if (typeof resultNoInCityUser === 'number') {
+                switch (resultNoInCityUser) {
+                    case -2:
+                        return res.status(500).json({ "code": 2, "msg": translate.t('user.An error occurred while adding users to the household.'), 'isAuth': 0 });
+                    break;
+                }
+            }
+            else {
+                // if (resultAddUsersToHousehold?._id) {
+                    return res.json({ "code": 0, "msg": translate.t('user.successfuly_noTripUser'),"data": resultNoInCityUser,'isAuth': 0 });
+                // }
+                // else {
+                //     return res.status(501).json({ "code": 9, "msg": translate.t('user.rigister_faild'), 'isAuth': 0 });
+                // }
+            }
+
+        } catch (e) {
+            super.toError(e, req, res);
+        }
+    }
+    async refreshToken(req, res) {
+        try {
+            const refreshToken = this.safeString(this.input(req.body.refreshToken));
+            const accessToken = this.safeString(this.input(req.body.accessToken));
+            const REFRESH_TOKEN_KEY = getEnv('REFRESH_TOKEN_KEY') + refreshToken;
+            const accessTokenKey = getEnv('ACCESS_TOKEN_KEY') + accessToken;
+            const resultRedis = await Redis.getHash(REFRESH_TOKEN_KEY);
+            if (resultRedis?.accessToken && resultRedis?.accessToken == accessToken) {
+                const newToken = await Token.generate(resultRedis?.userId, resultRedis?.active,resultRedis?.role)
+                if (typeof (newToken) == 'string') {
+                    return res.json({ 'code': -1, 'msg': 'Token generation failed!', })
+                }
+                else {
+                    let resultGetProfile = await this.model.getProfile(resultRedis?.userId);
+                    const userInfo = await this.model.getUserData(resultGetProfile);
+                    await Redis.del(REFRESH_TOKEN_KEY);
+                    await Redis.del(accessTokenKey);
+                    let data = {
+                        'userInfo': userInfo,
+                        'accessToken': newToken?.accessToken,
+                        'refreshToken': newToken?.refreshToken,
+                    }
+                    res.cookie('accessToken', newToken?.accessToken,this.accessTokenCookieOptions);
+                    return res.json({ 'code': 0, 'msg': 'success', 'data': data })
+                }
+            } else {
+                return res.json({ 'code': 1, 'msg': 'refresh token is invalid!', })
+            }
+            return res.json({ 'msg': 'success' })
+        } catch (e) {
+            super.toError(e, req, res)
+        }
+    }
 
 
 }

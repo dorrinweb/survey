@@ -1,18 +1,17 @@
 import {Router} from 'express';
-
 import userRoute from '../services/users/userRoute.js';
-import carRoute from '../services/cars/carRoute.js';
 import householdRoute from '../services/houseHolds/houseHoldRoute.js';
+import tripRoute from '../services/trips/tripRoute.js';
 
 const route = Router();
 
 //User rotes:
 route.use('/user',userRoute);
 
-//car routes:
-route.use('/car',carRoute);
-
-//Tag routes:
+//Tag household:
 route.use('/household',householdRoute);
+
+//Trip routes:
+route.use('/trip',tripRoute);
 
 export default route;
