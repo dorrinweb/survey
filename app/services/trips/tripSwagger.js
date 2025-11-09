@@ -2,9 +2,9 @@ export default {
     "/trip/add": {
   "post": {
 
-    "trips": [
-      "Trip"
-    ],
+    "tags": [
+          "Trips"
+        ],
     "summary": "Add New Trips",
     "description": "Add multiple trips for a user in a single request. The `x-token` is required in the header for authentication, and the `userId` is required in the request body to specify the passenger. The trips array should contain individual trip details.",
     "produces": [
@@ -261,9 +261,9 @@ export default {
 },
     "/trip/user-trips/{id}": {
     "get": {
-      "trips": [
-        "Trip"
-      ],
+      "tags": [
+          "Trips"
+        ],
       "summary": "user Trips Index",
       "description": "List Of user Trips",
       "produces": [

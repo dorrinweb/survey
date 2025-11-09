@@ -5,7 +5,7 @@ import swaggerJsdoc from 'swagger-jsdoc';
 import User from '../services/users/userSwagger.js';
 import HouseHold from '../services/houseHolds/houseHoldSwagger.js';
 import Trip from '../services/trips/tripSwagger.js';
-
+import Admin from '../services/admin/adminSwagger.js'
 
 
 const options = {
@@ -26,7 +26,8 @@ const options = {
       paths : {
         ...HouseHold,
         ...User,
-        ...Trip
+        ...Trip,
+        ...Admin
       }
     }
 };

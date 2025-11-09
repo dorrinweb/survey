@@ -56,7 +56,7 @@ async add(data) {
         const tripsToInsert = trips.map((trip, index) => {
             // Check and set departure for trips (from the second trip onward)
             if (index > 0 && (!trip.departure.location || trip.departure.location == '') && previousDestination) {
-                trip.departure = previousDestination; // Use previous destination as departure
+                trip.departure.location = previousDestination.location; // Use previous destination as departure
             }
 
             // Update previous destination for the next trip
@@ -124,5 +124,28 @@ async add(data) {
             log(error); // Log any errors for debugging
             return -1; // Return error as a string
         }
-    }     
+    } 
+
+    async findTrips({ page, limit, skip }) {
+        try {
+            const [trips, total] = await Promise.all([
+                this.model.find({})
+                    .skip(skip)
+                    .limit(limit)
+                    .exec(),
+                this.model.countDocuments()
+            ]);
+    
+            return {
+                data: trips,
+                total
+            };
+        } catch (e) {
+            console.error(e);
+            return {
+                data: [],
+                total: 0
+            };
+        }
+    }
 }
