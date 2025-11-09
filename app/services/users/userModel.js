@@ -221,7 +221,28 @@ async userIsNoInCity(userId/*,session*/) {
         return -2; // "An error occurred while connecting the user to the household."
     }
 }
+async findUsers({ page, limit, skip }) {
+    try {
+        const [users, total] = await Promise.all([
+            this.model.find({})
+                .skip(skip)
+                .limit(limit)
+                .exec(),
+            this.model.countDocuments()
+        ]);
 
+        return {
+            data: users,
+            total
+        };
+    } catch (e) {
+        console.error(e);
+        return {
+            data: [],
+            total: 0
+        };
+    }
+}
 async usersBulkWrite(householdId,householdCode, users) {
     try {
 

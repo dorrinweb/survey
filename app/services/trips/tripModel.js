@@ -124,5 +124,28 @@ async add(data) {
             log(error); // Log any errors for debugging
             return -1; // Return error as a string
         }
-    }     
+    } 
+
+    async findTrips({ page, limit, skip }) {
+        try {
+            const [trips, total] = await Promise.all([
+                this.model.find({})
+                    .skip(skip)
+                    .limit(limit)
+                    .exec(),
+                this.model.countDocuments()
+            ]);
+    
+            return {
+                data: trips,
+                total
+            };
+        } catch (e) {
+            console.error(e);
+            return {
+                data: [],
+                total: 0
+            };
+        }
+    }
 }

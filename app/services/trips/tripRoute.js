@@ -11,7 +11,6 @@ const route = Router();
 try{
     route.post('/add',new AuthMiddleware().Auth,tripController.add);
     route.get('/user-trips/:id',new AuthMiddleware().Auth,tripController.userTrips);
-    route.get('admin/trips',new AuthMiddleware().Auth ,houseHoldController.index);
 
 
 
