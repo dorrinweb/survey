@@ -74,7 +74,7 @@ async add(data) {
         });
         // Insert all trips at once using insertMany
         const newTrips = await this.model.insertMany(tripsToInsert, { session });
-
+        const updateUserHasTrip = this.userModel.updateUserHasTrip(userId,true)
         // Commit the transaction and return the inserted trips
         await session.commitTransaction();
         session.endSession();

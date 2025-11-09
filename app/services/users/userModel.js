@@ -180,6 +180,20 @@ async checkRole(roleId){
         return -2; // "An error occurred while connecting the user to the household."
     }
 }
+async updateUserHasTrip(userId,value/*,session*/) {
+    try {
+        await this.model.findOneAndUpdate(
+            { '_id': userId }, 
+            { '$set': { 'hasTrip' : value } },
+            { new: true /*, session */} 
+        );
+        return updatedUser;
+      
+    } catch (e) {
+        log(e); // Log the error for debugging
+        return -2; // "An error occurred while connecting the user to the household."
+    }
+}
 
 async userIsNoTrip(userId/*,session*/) {
     try {

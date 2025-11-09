@@ -103,6 +103,10 @@ const UserSchema = new Schema(
                 type: Boolean,
                 default: false // Whether the user has a driving license
             },
+            hasTrip: {
+                type: Boolean,
+                default: false // Whether the user has a driving license
+            },
             tripReviewed: {
                 type: Boolean,
                 default: false // Whether the user has a driving license
