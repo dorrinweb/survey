@@ -135,6 +135,28 @@ async index(){
         return e.toString();
     }
 }
+async getHouseholds({ page, limit, skip }) {
+    try {
+        const [houseHolds, total] = await Promise.all([
+            this.model.find({})
+                .skip(skip)
+                .limit(limit)
+                .exec(),
+            this.model.countDocuments()
+        ]);
+
+        return {
+            data: houseHolds,
+            total
+        };
+    } catch (e) {
+        console.error(e);
+        return {
+            data: [],
+            total: 0
+        };
+    }
+}
 
 async updateMembers(householdId, userIds, session){
     try{

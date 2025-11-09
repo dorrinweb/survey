@@ -197,4 +197,119 @@ export default {
           },
         },
       },
+  "/household/admin/get-households": {
+  
+  "get": {
+    "tags": [
+        "Household"
+      ],
+    "summary": "Get list of households (paginated)",
+    "description": "Returns a paginated list of households. Accepts `page` and `limit` as query parameters.",
+    "produces": [
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "name": "x-token",
+        "in": "header",
+        "description": "Authentication token",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "name": "page",
+        "in": "query",
+        "description": "Page number",
+        "required": false,
+        "type": "integer",
+        "example": 1
+      },
+      {
+        "name": "limit",
+        "in": "query",
+        "description": "Number of items per page",
+        "required": false,
+        "type": "integer",
+        "example": 10
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "List of households",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "integer",
+              "example": 0
+            },
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "total": {
+              "type": "integer",
+              "example": 42
+            },
+            "page": {
+              "type": "integer",
+              "example": 1
+            },
+            "limit": {
+              "type": "integer",
+              "example": 10
+            },
+            "isAuth": {
+              "type": "integer",
+              "example": 0
+            }
+          }
+        }
+      },
+      "404": {
+        "description": "No household records found",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "integer",
+              "example": 9
+            },
+            "msg": {
+              "type": "string",
+              "example": "houseHold.not_found"
+            },
+            "isAuth": {
+              "type": "integer",
+              "example": 0
+            }
+          }
+        }
+      },
+      "500": {
+        "description": "Server error",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "integer",
+              "example": -1
+            },
+            "msg": {
+              "type": "string",
+              "example": "internal_server_error"
+            },
+            "isAuth": {
+              "type": "integer",
+              "example": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 };
