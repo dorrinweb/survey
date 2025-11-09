@@ -56,7 +56,7 @@ async add(data) {
         const tripsToInsert = trips.map((trip, index) => {
             // Check and set departure for trips (from the second trip onward)
             if (index > 0 && (!trip.departure.location || trip.departure.location == '') && previousDestination) {
-                trip.departure = previousDestination; // Use previous destination as departure
+                trip.departure.location = previousDestination.location; // Use previous destination as departure
             }
 
             // Update previous destination for the next trip
