@@ -37,6 +37,7 @@ export default class HouseHoldModel {
             await newHousehold.save(); // می‌توانید session را در اینجا فعال کنید
     
             // Step 3: Update user's householdId
+
             const resultUpdateUser = await this.userModel.updateHouseholdId(userId, newHousehold._id); // استفاده از _id به جای id
             if (!resultUpdateUser?._id) {
                 await session.abortTransaction();
@@ -135,9 +136,11 @@ async index(){
         return e.toString();
     }
 }
-async getHouseholds({ page, limit, skip }) {
+
+
+async findHouseholds({ page, limit, skip }) {
     try {
-        const [houseHolds, total] = await Promise.all([
+        const [ouseholds, total] = await Promise.all([
             this.model.find({})
                 .skip(skip)
                 .limit(limit)
@@ -146,7 +149,7 @@ async getHouseholds({ page, limit, skip }) {
         ]);
 
         return {
-            data: houseHolds,
+            data: ouseholds,
             total
         };
     } catch (e) {

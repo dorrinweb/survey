@@ -143,34 +143,5 @@ async view(req, res) {
 
 
 
-async getHouseholds(req, res) {
-    try {
-        const page = parseInt(req.query.page) || 1;
-        const limit = parseInt(req.query.limit) || 10;
-        const skip = (page - 1) * limit;
-
-        const result = await this.model.getHouseholds({ page, limit, skip });
-
-        if (result && result.data && result.data.length > 0) {
-            return res.json({
-                code: 0,
-                data: result.data,
-                total: result.total,
-                page,
-                limit,
-                isAuth: 0
-            });
-        } else {
-            return res.status(404).json({
-                code: 9,
-                msg: translate.t('houseHold.not_found'),
-                isAuth: 0
-            });
-        }
-
-    } catch (e) {
-        super.toError(e, req, res);
-    }
-}
 
 }

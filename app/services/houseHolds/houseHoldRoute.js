@@ -12,7 +12,6 @@ try{
      route.get('/index',new AuthMiddleware().Auth ,houseHoldController.index);
      route.post('/add',new AuthMiddleware().Auth ,houseHoldController.add);
      route.get('/my-household',new AuthMiddleware().Auth ,houseHoldController.view);
-     route.get('/admin/get-households',new AuthMiddleware().Auth ,houseHoldController.getHouseholds);
 
     
 }catch(e){
