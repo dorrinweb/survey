@@ -68,6 +68,10 @@ const tripSchema = new Schema(
                 type: String, // Purpose of the trip (list of selected purposes)
                 required: true
             },
+            transportationMode: {
+                type: String, 
+                
+            },
             parking: {
                 type: String, // Parking 
                 enum: [
